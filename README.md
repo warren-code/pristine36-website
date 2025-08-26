@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pristine36 Website
+
+A modern, SEO-optimized website for Pristine36 specialist cleaning services, built with Next.js 15, TypeScript, and Tailwind CSS.
+
+## Features
+
+- 🎨 **Modern Glassmorphism Design** - Inspired by Ramp.com with glass-effect UI components
+- 📱 **Fully Responsive** - Mobile-first design that works on all devices
+- 🚀 **Performance Optimized** - Built with Next.js 15 and optimized for Core Web Vitals
+- 🔍 **SEO Ready** - Complete with meta tags, structured data, sitemap, and robots.txt
+- 📅 **Calendly Integration** - Seamless booking system for consultations
+- ✨ **Smooth Animations** - Subtle animations using Framer Motion
+
+## Pages
+
+- **Home** - Hero section with services overview and trust indicators
+- **Services** - Comprehensive list of all specialist cleaning services
+- **About** - Company information, values, and certifications
+- **Coverage** - Service areas with response times
+- **Clients** - Testimonials and client showcase
+- **Contact** - Contact form and company information
+- **Book** - Calendly integration for booking consultations
+
+## Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Animations**: Framer Motion
+- **SEO**: Next.js Metadata API + JSON-LD structured data
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd pristine36-website
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+## Development
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Run development server
+npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Build for production
+npm run build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Start production server
+npm start
 
-## Deploy on Vercel
+# Run linting
+npm run lint
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This website is optimized for deployment on Vercel:
+
+1. Push your code to GitHub
+2. Import the project to Vercel
+3. Deploy with zero configuration
+
+## Environment Variables
+
+No environment variables are required for basic functionality. 
+
+For Calendly integration, update the Calendly URL in `/app/book/page.tsx` with your actual Calendly link.
+
+## SEO Configuration
+
+- Update metadata in `app/layout.tsx`
+- Modify structured data in `components/SEO.tsx`
+- Sitemap is automatically generated at `/sitemap.xml`
+- Robots.txt is available at `/robots.txt`
+
+## Customization
+
+### Colors
+Edit the color palette in `tailwind.config.ts`
+
+### Content
+- Service listings: `app/services/page.tsx`
+- Client testimonials: `app/clients/page.tsx`
+- Coverage areas: `app/coverage/page.tsx`
+
+### Contact Information
+Update phone numbers and email addresses throughout the site by searching for:
+- `+44123456789`
+- `info@pristine36.com`
+
+## License
+
+© 2024 Pristine36. All rights reserved.
