@@ -8,36 +8,28 @@ import { Star, Building2, Quote, ArrowRight } from 'lucide-react'
 const testimonials = [
   {
     id: 1,
-    name: 'James Mitchell',
     company: 'JJ Properties',
-    role: 'Property Manager',
-    content: 'Pristine36 has been instrumental in maintaining our commercial properties. Their kitchen deep cleaning service is thorough and compliant with all regulations. The team is professional, reliable, and always goes above and beyond.',
+    content: 'Pristine36 has been our go-to for emergency biohazard cleaning and regular deep cleans. Their team is professional, discreet, and always available when we need them. Outstanding service!',
     rating: 5,
     service: 'Commercial Kitchen Cleaning'
   },
   {
     id: 2,
-    name: 'Sarah Chen',
     company: 'All Season Foods',
-    role: 'Operations Director',
     content: 'We\'ve been using Pristine36 for our restaurant\'s grease trap services and kitchen extract cleaning. Their attention to detail and compliance with TR19 standards gives us peace of mind. Highly recommended!',
     rating: 5,
     service: 'Grease Management & Kitchen Extract'
   },
   {
     id: 3,
-    name: 'Michael Thompson',
     company: 'Private Client',
-    role: 'Homeowner',
     content: 'After a flooding incident, Pristine36 responded within hours. Their post-flood sanitization service was exceptional. They handled everything professionally and helped prevent any mould issues. Truly grateful for their 24/7 service.',
     rating: 5,
     service: 'Emergency Flood Cleaning'
   },
   {
     id: 4,
-    name: 'Emma Williams',
     company: 'City Centre Bar',
-    role: 'Bar Manager',
     content: 'The bar cleaning service from Pristine36 transformed our venue. From the cellar to the main floor, everything is spotless. Their team works around our schedule, which is crucial for our business.',
     rating: 5,
     service: 'Bar Deep Cleaning'
@@ -114,10 +106,7 @@ export default function ClientsPage() {
                       <Star key={i} style={{ height: '1.25rem', width: '1.25rem', fill: '#facc15', color: '#facc15' }} />
                     ))}
                   </div>
-                  <CardTitle style={{ fontSize: '1.125rem' }}>{testimonial.name}</CardTitle>
-                  <CardDescription>
-                    {testimonial.role} at {testimonial.company}
-                  </CardDescription>
+                  <CardTitle style={{ fontSize: '1.125rem' }}>{testimonial.company}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p style={{ marginBottom: '1rem', position: 'relative', zIndex: 10, color: 'rgba(255, 255, 255, 0.9)' }}>{testimonial.content}</p>

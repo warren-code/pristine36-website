@@ -4,8 +4,8 @@ import { Calendar, Phone, ArrowLeft, Check } from 'lucide-react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
 
-// Calendly URL - Update this with your actual Calendly link
-const CALENDLY_URL = 'https://calendly.com/your-link-here'
+// Calendly URL
+const CALENDLY_URL = 'https://calendly.com/enquiries-pristine36/30min'
 
 export default function BookPage() {
   return (
@@ -88,7 +88,7 @@ export default function BookPage() {
                 <h3 style={{ fontSize: '1.125rem', fontWeight: '600', color: '#111827', marginBottom: '1rem' }}>Need help?</h3>
                 <p style={{ fontSize: '0.875rem', color: '#4b5563', marginBottom: '1rem' }}>Having trouble booking or prefer to speak with someone?</p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                  <a href="tel:+44123456789" style={{ width: '100%' }}>
+                  <a href="tel:07860249950" style={{ width: '100%' }}>
                     <Button size="md" variant="secondary" style={{ width: '100%', justifyContent: 'center' }}>
                       <Phone style={{ height: '1rem', width: '1rem', marginRight: '0.5rem' }} />
                       Call us directly

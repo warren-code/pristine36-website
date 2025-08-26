@@ -31,8 +31,6 @@ const stats = [
 
 const testimonial = {
   quote: "Pristine36 has been instrumental in maintaining our commercial properties. Their kitchen deep cleaning service is thorough and compliant with all regulations.",
-  author: "James Mitchell",
-  role: "Property Manager",
   company: "JJ Properties"
 }
 
@@ -137,9 +135,9 @@ export default function Home() {
               </blockquote>
               <div className="flex justify-center">
                 <div>
-                  <div className="font-semibold" style={{ color: 'white' }}>{testimonial.author}</div>
+                  <div className="font-semibold" style={{ color: 'white' }}>{testimonial.company}</div>
                   <div style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
-                    {testimonial.role} at {testimonial.company}
+                    Commercial Property Management
                   </div>
                 </div>
               </div>
@@ -213,8 +211,8 @@ export default function Home() {
             <Link href="/book" className="btn" style={{ backgroundColor: 'white', color: 'var(--primary)', fontWeight: '600', padding: '0.875rem 1.75rem', borderRadius: '9999px' }}>
               Book Consultation
             </Link>
-            <a href="tel:+44123456789" className="btn btn-outline" style={{ borderColor: 'white', color: 'white', backgroundColor: 'transparent' }}>
-              Call: +44 123 456 789
+            <a href="tel:07860249950" className="btn btn-outline" style={{ borderColor: 'white', color: 'white', backgroundColor: 'transparent' }}>
+              Call: 07860249950
             </a>
           </div>
         </div>

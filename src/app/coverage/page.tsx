@@ -234,7 +234,7 @@ export default function CoveragePage() {
             requests from nearby locations. Contact us to discuss your specific needs.
           </p>
           <div className="button-group">
-            <a href="tel:+44123456789">
+            <a href="tel:07860249950">
               <Button size="lg" variant="secondary">
                 <Phone style={{ marginRight: '0.5rem', height: '1.25rem', width: '1.25rem' }} />
                 Call to Discuss

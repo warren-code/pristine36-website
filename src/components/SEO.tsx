@@ -19,7 +19,7 @@ export default function SEO({ title, path = '' }: SEOProps) {
     image: `${baseUrl}/logo.png`,
     description: 'Professional specialist cleaning services in Greater London including kitchen extract cleaning, biohazard cleaning, and commercial deep cleaning.',
     url: baseUrl,
-    telephone: '+44123456789',
+      telephone: '07860 249950',
     email: 'info@pristine36.com',
     address: {
       '@type': 'PostalAddress',
