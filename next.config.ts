@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  experimental: {
-    runtime: 'nodejs',
+  output: 'standalone',
+  images: {
+    unoptimized: true,
   },
   webpack: (config) => {
     config.resolve.fallback = { fs: false, path: false };
