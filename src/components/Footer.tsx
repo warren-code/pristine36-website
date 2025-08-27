@@ -225,17 +225,17 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div style={{ marginTop: '2rem', paddingTop: '2rem', borderTop: '1px solid var(--border)' }}>
-          <div className="flex justify-between items-center" style={{ flexWrap: 'wrap', gap: '1.5rem' }}>
-            <div className="flex items-center" style={{ flexWrap: 'wrap', gap: '1.5rem' }}>
-              <p className="text-gray-600">
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1.5rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '1.5rem' }}>
+              <p className="text-gray-600" style={{ margin: 0, display: 'flex', alignItems: 'center' }}>
                 © {new Date().getFullYear()} Pristine 36 Limited. All rights reserved.
               </p>
-              <div className="flex items-center gap-2" style={{ height: '100%' }}>
-                <div style={{ width: '0.5rem', height: '0.5rem', backgroundColor: 'var(--primary)', borderRadius: '9999px', flexShrink: 0 }}></div>
-                <span className="text-sm text-gray-600" style={{ lineHeight: '1.5' }}>24/7 Emergency Service Available</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <div style={{ width: '0.5rem', height: '0.5rem', backgroundColor: 'var(--primary)', borderRadius: '50%', flexShrink: 0 }}></div>
+                <span className="text-sm text-gray-600">24/7 Emergency Service Available</span>
               </div>
             </div>
-            <div className="flex items-center gap-8">
+            <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
               <Link href="/privacy" className="text-sm text-gray-600 hover:text-white transition-colors duration-200" style={{ textDecoration: 'none' }}>
                 Privacy Policy
               </Link>

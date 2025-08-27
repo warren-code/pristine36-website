@@ -148,8 +148,8 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }} aria-label="Pristine36 Home">
-              <div style={{ width: '48px', height: '48px', flexShrink: 0 }}>
-                <LogoSimple style={{ width: '100%', height: '100%' }} aria-hidden="true" />
+              <div style={{ width: '48px', height: '48px', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <LogoSimple style={{ width: '48px', height: '48px', maxWidth: '100%', maxHeight: '100%' }} aria-hidden="true" />
               </div>
               <span style={{ fontSize: '1.5rem', fontWeight: '700', letterSpacing: '-0.02em', color: 'var(--primary)' }}>
                 Pristine<span style={{ color: 'var(--secondary)' }}>36</span>
