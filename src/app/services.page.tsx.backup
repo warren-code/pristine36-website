@@ -68,7 +68,7 @@ const allServices = [
   {
     id: 'sanitisation',
     title: 'Sanitisation & Disinfection',
-    description: 'Give everyone confidence to enter your space knowing it\'s scientifically proven safe',
+    description: 'Give everyone confidence to enter your space knowing it's scientifically proven safe',
     icon: Shield,
     features: [
       'You\'ll protect everyone from invisible health threats',
@@ -82,14 +82,14 @@ const allServices = [
   {
     id: 'mould',
     title: 'Mould Clean',
-    description: 'Stop worrying about your family\'s health and protect your property\'s value from hidden damage',
+    description: 'Stop worrying about your family's health and protect your property's value from hidden damage',
     icon: Home,
     features: [
-      'You\'ll breathe clean, healthy air in every room again',
+      'You'll breathe clean, healthy air in every room again',
       'Your family will be safe from respiratory problems',
-      'You\'ll maintain your property\'s value and saleability',
-      'You\'ll avoid £10,000+ structural repair bills',
-      'You\'ll know exactly how to keep mould away forever'
+      'You'll maintain your property's value and saleability',
+      'You'll avoid £10,000+ structural repair bills',
+      'You'll know exactly how to keep mould away forever'
     ]
   },
   {
@@ -100,9 +100,9 @@ const allServices = [
     features: [
       'Your drinks will taste exactly as intended, every pour',
       'Customers will choose your clean bar over competitors',
-      'You\'ll stop pouring profits down the drain from waste',
-      'You\'ll avoid surprise closures from equipment failure',
-      'You\'ll ace every health inspection without stress'
+      'You'll stop pouring profits down the drain from waste',
+      'You'll avoid surprise closures from equipment failure',
+      'You'll ace every health inspection without stress'
     ]
   },
   {
@@ -111,24 +111,24 @@ const allServices = [
     description: 'Save thousands on replacements while creating a healthier, more impressive workspace',
     icon: Sofa,
     features: [
-      'You\'ll extend carpet life by 5+ years, saving thousands',
+      'You'll extend carpet life by 5+ years, saving thousands',
       'Your space will look professional and well-maintained',
-      'You\'ll reduce allergy symptoms for staff and visitors',
-      'You\'ll be back in business within hours, not days',
-      'You\'ll meet your sustainability goals with green cleaning'
+      'You'll reduce allergy symptoms for staff and visitors',
+      'You'll be back in business within hours, not days',
+      'You'll meet your sustainability goals with green cleaning'
     ]
   },
   {
     id: 'bin',
     title: 'Bin Store Cleaning',
-    description: 'Stop complaints and pest problems while protecting your property\'s reputation and value',
+    description: 'Stop complaints and pest problems while protecting your property's reputation and value',
     icon: Building,
     features: [
-      'You\'ll eliminate embarrassing smells wafting indoors',
-      'You\'ll stop rats and flies before they become nightmares',
-      'You\'ll turn complaints into compliments from tenants',
-      'You\'ll protect your property\'s kerb appeal and value',
-      'You\'ll never have to think about bin cleaning again'
+      'You'll eliminate embarrassing smells wafting indoors',
+      'You'll stop rats and flies before they become nightmares',
+      'You'll turn complaints into compliments from tenants',
+      'You'll protect your property's kerb appeal and value',
+      'You'll never have to think about bin cleaning again'
     ]
   },
   {
@@ -137,11 +137,11 @@ const allServices = [
     description: 'Let us handle the difficult parts so you can focus on what matters most during hard times',
     icon: Heart,
     features: [
-      'You won\'t have to face traumatic cleanup yourself',
-      'You\'ll have a safe, clean space to return to',
+      'You won't have to face traumatic cleanup yourself',
+      'You'll have a safe, clean space to return to',
       'Your privacy will be completely protected throughout',
-      'You\'ll meet all insurance and legal obligations',
-      'You\'ll have immediate help whenever you need us'
+      'You'll meet all insurance and legal obligations',
+      'You'll have immediate help whenever you need us'
     ],
     keywords: ['trauma cleaning', 'crime scene cleaning', 'sharps removal service London', 'blood and bodily fluid cleaning', 'biohazard cleaning']
   },
@@ -152,10 +152,10 @@ const allServices = [
     icon: Building2,
     features: [
       'Your space will be 30% brighter with clean fixtures',
-      'You\'ll cut energy costs by up to 15% annually',
+      'You'll cut energy costs by up to 15% annually',
       'Visitors will notice your attention to every detail',
       'Your HVAC systems will last years longer',
-      'You\'ll meet all safety standards without worry'
+      'You'll meet all safety standards without worry'
     ],
     keywords: ['air handling unit (ahu)', 'indoor air quality (iaq)', 'laundry extraction system cleaning']
   },
@@ -165,11 +165,11 @@ const allServices = [
     description: 'Get back to business fast and prevent hidden damage that appears months later',
     icon: Waves,
     features: [
-      'You\'ll reopen days faster than with other methods',
-      'You\'ll prevent £15,000+ mould remediation costs',
-      'You\'ll save your property from rot and decay',
-      'We\'ll handle the insurance paperwork headache',
-      'You\'ll have help within 2 hours, day or night'
+      'You'll reopen days faster than with other methods',
+      'You'll prevent £15,000+ mould remediation costs',
+      'You'll save your property from rot and decay',
+      'We'll handle the insurance paperwork headache',
+      'You'll have help within 2 hours, day or night'
     ]
   },
   {
@@ -179,9 +179,9 @@ const allServices = [
     icon: Syringe,
     features: [
       'Children can play safely without needle stick risks',
-      'You\'ll avoid lawsuits and legal complications',
+      'You'll avoid lawsuits and legal complications',
       'People will feel safe using your spaces again',
-      'You\'ll exceed your duty of care requirements',
+      'You'll exceed your duty of care requirements',
       'Our certified team handles all the dangerous work'
     ],
     keywords: ['sharps disposal', 'sharps removal service London']
@@ -189,11 +189,11 @@ const allServices = [
   {
     id: 'other',
     title: 'Other Specialist Services',
-    description: 'No cleaning challenge is too unusual - we\'ll find the perfect solution for your specific needs',
+    description: 'No cleaning challenge is too unusual - we'll find the perfect solution for your specific needs',
     icon: AlertTriangle,
     features: [
-      'You\'ll secure your full deposit with tenancy cleaning',
-      'You\'ll breathe easily in dust-free renovated spaces',
+      'You'll secure your full deposit with tenancy cleaning',
+      'You'll breathe easily in dust-free renovated spaces',
       'Sensitive situations handled with total discretion',
       'Fire damage reversed to pre-incident condition',
       'One call solves any cleaning problem you have'
