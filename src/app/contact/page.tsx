@@ -25,14 +25,17 @@ export default function ContactPage() {
 
   // Initialize Calendly widget
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.Calendly && !calendlyLoaded) {
-      window.Calendly.initInlineWidget({
-        url: CONTACT.calendly,
-        parentElement: document.querySelector('.calendly-inline-widget'),
-        prefill: {},
-        utm: {}
-      });
-      setCalendlyLoaded(true);
+    if (typeof window !== 'undefined' && !calendlyLoaded) {
+      const calendlyWindow = window as any;
+      if (calendlyWindow.Calendly) {
+        calendlyWindow.Calendly.initInlineWidget({
+          url: CONTACT.calendly,
+          parentElement: document.querySelector('.calendly-inline-widget'),
+          prefill: {},
+          utm: {}
+        });
+        setCalendlyLoaded(true);
+      }
     }
   }, [calendlyLoaded])
 
@@ -129,13 +132,16 @@ export default function ContactPage() {
             src="https://assets.calendly.com/assets/external/widget.js" 
             strategy="afterInteractive"
             onLoad={() => {
-              if (typeof window !== 'undefined' && window.Calendly) {
-                window.Calendly.initInlineWidget({
-                  url: CONTACT.calendly,
-                  parentElement: document.querySelector('.calendly-inline-widget'),
-                  prefill: {},
-                  utm: {}
-                });
+              if (typeof window !== 'undefined') {
+                const calendlyWindow = window as any;
+                if (calendlyWindow.Calendly) {
+                  calendlyWindow.Calendly.initInlineWidget({
+                    url: CONTACT.calendly,
+                    parentElement: document.querySelector('.calendly-inline-widget'),
+                    prefill: {},
+                    utm: {}
+                  });
+                }
               }
             }}
           />
