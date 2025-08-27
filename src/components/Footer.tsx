@@ -22,7 +22,7 @@ const footerLinks = {
     { name: 'Our Clients', href: '/clients' },
     { name: 'Coverage Areas', href: '/coverage' },
     { name: 'Contact Us', href: '/contact' },
-    { name: 'Book Consultation', href: '/contact#calendly' },
+    { name: 'Book Consultation', href: '/contact' },
   ],
   areas: [
     { name: 'Greater London', href: '/coverage#london' },

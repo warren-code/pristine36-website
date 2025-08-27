@@ -88,35 +88,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Calendly Widget Section */}
-      <section id="calendly" className="section" style={{ paddingTop: '4rem', paddingBottom: '4rem', backgroundColor: 'var(--card-bg)' }}>
-        <div className="container">
-          <div className="text-center" style={{ marginBottom: '3rem' }}>
-            <h2 style={{ color: 'white', marginBottom: '1rem' }}>Schedule Your Free Consultation</h2>
-            <p style={{ color: 'rgba(255, 255, 255, 0.9)', fontSize: '1.125rem', maxWidth: '600px', margin: '0 auto' }}>
-              Choose a convenient time for your initial consultation. Our specialist cleaning experts are ready to discuss your needs.
-            </p>
-          </div>
-          
-          {/* Calendly inline widget - Using iframe approach */}
-          <div style={{ position: 'relative', width: '100%' }}>
-            <iframe
-              src={`${CONTACT.calendly}?embed_domain=${typeof window !== 'undefined' ? window.location.hostname : ''}&embed_type=Inline`}
-              width="100%"
-              height="700"
-              frameBorder="0"
-              style={{
-                borderRadius: '1rem',
-                overflow: 'hidden',
-                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
-                backgroundColor: 'var(--card-bg)'
-              }}
-              title="Schedule a consultation"
-            />
-          </div>
-        </div>
-      </section>
-
       {/* Contact Information */}
       <section className="section" style={{ paddingTop: '6rem', paddingBottom: '6rem', backgroundColor: 'var(--background)' }}>
         <div className="container">
