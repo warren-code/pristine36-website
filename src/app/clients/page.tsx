@@ -111,9 +111,11 @@ export default function ClientsPage() {
                 </CardHeader>
                 <CardContent>
                   <p style={{ marginBottom: '1rem', position: 'relative', zIndex: 10, color: 'rgba(255, 255, 255, 0.9)' }}>{testimonial.content}</p>
-                  <p className="text-sm font-medium" style={{ color: 'var(--primary)' }}>
-                    Service: {testimonial.service}
-                  </p>
+                  <Link href={`/services#${testimonial.service.toLowerCase().replace(/ /g, '-')}`} style={{ textDecoration: 'none' }}>
+                    <p className="text-sm font-medium" style={{ color: 'var(--primary)', cursor: 'pointer' }}>
+                      Service: {testimonial.service} →
+                    </p>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
@@ -140,8 +142,8 @@ export default function ClientsPage() {
               </CardHeader>
               <CardContent>
                 <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
-                  Restaurants, bars, hotels, and cafes trust us for kitchen deep cleaning, 
-                  grease management, and compliance services.
+                  Restaurants, bars, hotels, and cafes trust us for <Link href="/services#kitchen" style={{ color: 'var(--primary)' }}>kitchen deep cleaning</Link>, 
+                  <Link href="/services#grease" style={{ color: 'var(--primary)' }}>grease management</Link>, and compliance services.
                 </p>
               </CardContent>
             </Card>
@@ -152,8 +154,8 @@ export default function ClientsPage() {
               </CardHeader>
               <CardContent>
                 <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
-                  FM companies and property managers rely on us for emergency cleaning, 
-                  routine maintenance, and specialist services.
+                  FM companies and property managers rely on us for <Link href="/services#flood" style={{ color: 'var(--primary)' }}>emergency cleaning</Link>, 
+                  routine maintenance, and <Link href="/services" style={{ color: 'var(--primary)' }}>specialist services</Link>.
                 </p>
               </CardContent>
             </Card>
@@ -164,8 +166,8 @@ export default function ClientsPage() {
               </CardHeader>
               <CardContent>
                 <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
-                  Local authorities and government facilities choose us for biohazard 
-                  cleaning, sanitization, and emergency response.
+                  Local authorities and government facilities choose us for <Link href="/services#biohazard" style={{ color: 'var(--primary)' }}>biohazard 
+                  cleaning</Link>, <Link href="/services#sanitisation" style={{ color: 'var(--primary)' }}>sanitization</Link>, and emergency response.
                 </p>
               </CardContent>
             </Card>

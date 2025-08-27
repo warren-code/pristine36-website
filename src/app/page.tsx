@@ -48,12 +48,12 @@ export default function Home() {
               TR19 compliant kitchen extract cleaning, biohazard decontamination, and commercial deep cleaning across Greater London and surrounding areas.
             </p>
             <div className="flex gap-4 animate-slide-up" style={{ animationDelay: '0.2s', flexWrap: 'wrap' }}>
-              <Link href="/book" className="btn btn-primary">
-                Book Free Consultation
+              <Link href="/services" className="btn btn-primary">
+                View Our Services
                 <ArrowRight style={{ width: '1rem', height: '1rem', marginLeft: '0.5rem' }} />
               </Link>
-              <Link href="/services" className="btn btn-outline">
-                Explore Services
+              <Link href="/book" className="btn btn-secondary">
+                Get Your Free Quote
               </Link>
             </div>
             <div className="flex gap-8 animate-slide-up" style={{ marginTop: '3rem', animationDelay: '0.3s', flexWrap: 'wrap' }}>
@@ -117,7 +117,7 @@ export default function Home() {
           </div>
           <div className="text-center" style={{ marginTop: '3rem' }}>
             <Link href="/services" className="btn btn-secondary">
-              View All Services
+              Explore All 15+ Services
               <ArrowRight style={{ width: '1rem', height: '1rem', marginLeft: '0.5rem' }} />
             </Link>
           </div>
@@ -192,8 +192,8 @@ export default function Home() {
             <div className="mobile-padding" style={{ borderRadius: '1rem', backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)' }}>
               <h3 className="text-2xl font-semibold" style={{ marginBottom: '1.5rem', color: 'white' }}>Get Started Today</h3>
               <p style={{ marginBottom: '2rem', color: 'rgba(255, 255, 255, 0.8)' }}>Contact us for a free consultation and discover how our specialist cleaning services can benefit your business.</p>
-              <Link href="/contact" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
-                Get in Touch
+              <Link href="/book" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
+                Get My Free Estimate
                 <ArrowRight style={{ width: '1rem', height: '1rem', marginLeft: '0.5rem' }} />
               </Link>
             </div>
@@ -209,11 +209,11 @@ export default function Home() {
             Join hundreds of satisfied clients who trust Pristine36 for their specialist cleaning needs.
           </p>
           <div className="flex gap-4 justify-center" style={{ flexWrap: 'wrap' }}>
-            <Link href="/book" className="btn" style={{ backgroundColor: 'white', color: 'var(--primary)', fontWeight: '600', padding: '0.875rem 1.75rem', borderRadius: '9999px' }}>
-              Book Consultation
+            <Link href="/book" className="btn" style={{ backgroundColor: 'white', color: 'var(--primary)', fontWeight: '600', padding: '1rem 2rem', borderRadius: '9999px', fontSize: '1.125rem' }}>
+              Start Your Free Quote
             </Link>
             <a href="tel:07860249950" className="btn btn-outline" style={{ borderColor: 'white', color: 'white', backgroundColor: 'transparent' }}>
-              Call: 07860249950
+              Call Now: 07860249950
             </a>
           </div>
         </div>

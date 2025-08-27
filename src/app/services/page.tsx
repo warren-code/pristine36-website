@@ -14,189 +14,189 @@ const allServices = [
   {
     id: 'kitchen',
     title: 'Kitchen Deep Clean',
-    description: 'TR19 compliant commercial kitchen extract cleaning, canopy cleaning, and ductwork cleaning services',
+    description: 'Keep your kitchen safe, compliant, and operating at peak efficiency with our professional deep cleaning',
     icon: Sparkles,
     features: [
-      'TR19 compliant cleaning',
-      'Canopy and filter cleaning',
-      'Ductwork degreasing',
-      'Fire damper testing',
-      'Compliance certificates'
+      'Prevent fire hazards and insurance issues',
+      'Pass health inspections with confidence',
+      'Extend equipment life and reduce breakdowns',
+      'Improve air quality for staff comfort',
+      'Receive compliance certificates for peace of mind'
     ],
     keywords: ['kitchen extract cleaning', 'commercial kitchen deep cleaning', 'tr19 grease', 'ductwork cleaning', 'canopy cleaning London']
   },
   {
     id: 'pest',
     title: 'Post Pest Fouling Cleans',
-    description: 'Professional cleaning and sanitization after pest infestations',
+    description: 'Restore your property to a safe, healthy environment after pest infestations',
     icon: Bug,
     features: [
-      'Complete decontamination',
-      'Removal of droppings and nests',
-      'Sanitization and disinfection',
-      'Odor removal',
-      'Prevention advice'
+      'Protect your health from harmful pathogens',
+      'Eliminate unpleasant odours completely',
+      'Make your space safe for occupancy again',
+      'Prevent recurring infestations',
+      'Get expert advice to avoid future problems'
     ]
   },
   {
     id: 'grease',
     title: 'Grease Trap Service',
-    description: 'Comprehensive grease trap cleaning and FOG waste management',
+    description: 'Avoid costly blockages, fines, and shutdowns with regular grease management',
     icon: Droplets,
     features: [
-      'Grease trap emptying',
-      'FOG waste disposal',
-      'Grease filter cleaning',
-      'Compliance with regulations',
-      'Scheduled maintenance'
+      'Prevent expensive drainage blockages',
+      'Stay compliant with environmental regulations',
+      'Avoid hefty fines and legal issues',
+      'Keep your kitchen running smoothly',
+      'Save money with scheduled maintenance plans'
     ],
     keywords: ['grease disposal London regulations', 'grease management', 'fog waste management', 'grease filter cleaning']
   },
   {
     id: 'washroom',
     title: 'Washroom Deep Clean',
-    description: 'Thorough sanitization and deep cleaning of commercial washrooms',
+    description: 'Create a positive impression with spotless, hygienic washroom facilities',
     icon: SprayCan,
     features: [
-      'Deep sanitization',
-      'Descaling and deodorizing',
-      'Tile and grout cleaning',
-      'Fixture restoration',
-      'ATP testing available'
+      'Impress customers with pristine facilities',
+      'Eliminate odours that damage your reputation',
+      'Restore fixtures to like-new condition',
+      'Reduce spread of illness among staff',
+      'Get measurable cleanliness with ATP testing'
     ]
   },
   {
     id: 'sanitisation',
     title: 'Sanitisation & Disinfection',
-    description: 'Professional disinfection services including coronavirus decontamination',
+    description: 'Create a safer environment for your staff and customers with proven disinfection',
     icon: Shield,
     features: [
-      'Pathogen control',
-      'Coronavirus decontamination',
-      'ATP testing',
-      'Fogging services',
-      'Certification provided'
+      'Protect against viruses and harmful bacteria',
+      'Reduce sick days and boost productivity',
+      'Show customers you prioritise their safety',
+      'Get scientific proof with ATP testing',
+      'Receive certification for compliance and marketing'
     ],
     keywords: ['disinfection services London', 'atp testing', 'coronavirus biohazard decontamination', 'pathogen control solutions']
   },
   {
     id: 'mould',
     title: 'Mould Clean',
-    description: 'Professional mould remediation for residential and commercial properties',
+    description: 'Protect your health and property value with professional mould remediation',
     icon: Home,
     features: [
-      'Mould removal',
-      'Anti-mould treatment',
-      'Moisture control',
-      'Air quality improvement',
-      'Prevention strategies'
+      'Breathe easier with improved air quality',
+      'Protect your family\'s health from mould spores',
+      'Preserve your property value and appeal',
+      'Prevent costly structural damage',
+      'Stop mould returning with prevention strategies'
     ]
   },
   {
     id: 'bar',
     title: 'Bar Cleans',
-    description: 'Specialized cleaning services for bars and entertainment venues',
+    description: 'Keep your venue inviting and your drinks tasting perfect with specialist bar cleaning',
     icon: Wine,
     features: [
-      'Beer line cleaning',
-      'Floor deep cleaning',
-      'Glass washer maintenance',
-      'Cellar cleaning',
-      'Compliance support'
+      'Serve better-tasting drinks with clean lines',
+      'Create a welcoming atmosphere for customers',
+      'Reduce waste from spoiled products',
+      'Prevent equipment breakdowns and closures',
+      'Stay compliant with health regulations'
     ]
   },
   {
     id: 'carpet',
     title: 'Carpet Cleaning',
-    description: 'Professional carpet cleaning for commercial and residential properties',
+    description: 'Extend carpet life and create healthier spaces with professional deep cleaning',
     icon: Sofa,
     features: [
-      'Deep extraction cleaning',
-      'Stain removal',
-      'Odor elimination',
-      'Quick drying methods',
-      'Eco-friendly options'
+      'Save thousands on carpet replacement costs',
+      'Remove unsightly stains that hurt your image',
+      'Eliminate trapped allergens and dust mites',
+      'Get back to business faster with quick drying',
+      'Choose eco-friendly options for sustainability'
     ]
   },
   {
     id: 'bin',
     title: 'Bin Store Cleaning',
-    description: 'Comprehensive bin store cleaning and sanitization services',
+    description: 'Transform your bin areas from eyesores to clean, manageable spaces',
     icon: Building,
     features: [
-      'Pressure washing',
-      'Deodorizing',
-      'Pest deterrent application',
-      'Drainage cleaning',
-      'Regular maintenance'
+      'Eliminate foul odours affecting your property',
+      'Prevent pest infestations and health risks',
+      'Avoid complaints from tenants or neighbours',
+      'Maintain property value and appeal',
+      'Save time with regular maintenance plans'
     ]
   },
   {
     id: 'biohazard',
     title: 'Post Trauma & After Death Clean',
-    description: 'Sensitive and professional biohazard cleaning services',
+    description: 'Compassionate support during difficult times with professional biohazard cleaning',
     icon: Heart,
     features: [
-      'Blood and bodily fluid cleaning',
-      'Crime scene cleaning',
-      'Compassionate service',
-      'Complete sanitization',
-      'Discrete and confidential'
+      'Let us handle the difficult cleanup tasks',
+      'Return properties to safe, habitable condition',
+      'Work with sensitivity and complete discretion',
+      'Meet insurance and legal requirements',
+      'Available 24/7 when you need us most'
     ],
     keywords: ['trauma cleaning', 'crime scene cleaning', 'sharps removal service London', 'blood and bodily fluid cleaning', 'biohazard cleaning']
   },
   {
     id: 'high-level',
     title: 'High Level Clean',
-    description: 'Specialist high-level cleaning services (subject to environment)',
+    description: 'Maintain a professional appearance and healthy air quality with high-level cleaning',
     icon: Building2,
     features: [
-      'Ceiling cleaning',
-      'Light fixture cleaning',
-      'Air vent cleaning',
-      'High window cleaning',
-      'Safety compliant'
+      'Brighten your space with clean light fixtures',
+      'Improve air quality and reduce energy costs',
+      'Project professionalism to clients and visitors',
+      'Extend the life of expensive HVAC systems',
+      'Stay safe with fully compliant procedures'
     ],
     keywords: ['air handling unit (ahu)', 'indoor air quality (iaq)', 'laundry extraction system cleaning']
   },
   {
     id: 'flood',
     title: 'Post Flood Sanitisation',
-    description: 'Emergency flood damage cleaning and sanitization',
+    description: 'Get your property back to normal quickly after flood damage',
     icon: Waves,
     features: [
-      'Water extraction',
-      'Sanitization',
-      'Mould prevention',
-      'Structural drying',
-      '24/7 emergency response'
+      'Minimise downtime and get back to business',
+      'Prevent dangerous mould growth',
+      'Save your property from long-term damage',
+      'Work with insurance companies on your behalf',
+      'Available 24/7 when disaster strikes'
     ]
   },
   {
     id: 'needles',
     title: 'Needle Picking',
-    description: 'Safe removal and disposal of sharps and drug paraphernalia',
+    description: 'Protect your community from dangerous sharps with professional removal',
     icon: Syringe,
     features: [
-      'Safe sharps removal',
-      'Proper disposal',
-      'Area sanitization',
-      'Risk assessment',
-      'Certified handlers'
+      'Keep children and the public safe from harm',
+      'Reduce liability and legal risks',
+      'Restore confidence in public spaces',
+      'Meet duty of care obligations',
+      'Trust certified professionals to handle risks'
     ],
     keywords: ['sharps disposal', 'sharps removal service London']
   },
   {
     id: 'other',
     title: 'Other Specialist Services',
-    description: 'Additional specialist cleaning services through our network of subcontractors',
+    description: 'Whatever your cleaning challenge, we have the solution through our expert network',
     icon: AlertTriangle,
     features: [
-      'End of tenancy cleaning',
-      'After builder cleaning',
-      'Hoarder cleaning',
-      'Fire damage cleaning',
-      'Custom solutions'
+      'Get your deposit back with tenancy cleaning',
+      'Remove construction dust and debris completely',
+      'Handle sensitive hoarding situations with care',
+      'Restore fire-damaged properties professionally',
+      'Access any specialist service you need'
     ],
     keywords: ['end of tenancy cleaning', 'end of tenancy deep clean London', 'after builder cleaning', 'hoarder cleaning', 'compliance certificate cleaning']
   },

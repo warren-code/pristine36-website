@@ -198,25 +198,29 @@ a:hover {
   }
 }
 
-/* Buttons */
+/* Buttons - Enhanced for better visual hierarchy */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.875rem 1.75rem;
-  min-height: 48px; /* Touch-friendly minimum height */
-  min-width: 64px;
-  font-size: 1rem;
-  font-weight: 500;
+  padding: 1rem 2rem;
+  min-height: 52px; /* Increased touch target */
+  min-width: 120px;
+  font-size: 1.0625rem;
+  font-weight: 600;
   line-height: 1;
-  border-radius: 0.5rem;
-  transition: all 0.2s ease;
+  border-radius: 9999px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   border: none;
   outline: none;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
 }
 
 /* Mobile button adjustments */
@@ -233,31 +237,33 @@ a:hover {
 }
 
 .btn-primary {
-  background-color: var(--primary);
+  background: linear-gradient(135deg, var(--primary) 0%, #3CCF6E 100%);
   color: var(--background);
   border-radius: 9999px;
-  font-weight: 600;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(74, 222, 128, 0.4);
+  transform: scale(1);
 }
 
 .btn-primary:hover {
-  background-color: #3CCF6E; /* Slightly darker green */
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(74, 222, 128, 0.3);
+  background: linear-gradient(135deg, #3CCF6E 0%, var(--primary) 100%);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(74, 222, 128, 0.5);
 }
 
 .btn-secondary {
-  background-color: var(--secondary);
+  background: linear-gradient(135deg, var(--secondary) 0%, #1BB3A1 100%);
   color: var(--background);
-  border: 2px solid var(--secondary);
+  border: 2px solid transparent;
   border-radius: 9999px;
-  font-weight: 600;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(32, 201, 182, 0.4);
 }
 
 .btn-secondary:hover {
-  background-color: #1BB3A1; /* Slightly darker teal */
-  border-color: #1BB3A1;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(32, 201, 182, 0.3);
+  background: linear-gradient(135deg, #1BB3A1 0%, var(--secondary) 100%);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(32, 201, 182, 0.5);
 }
 
 .btn-outline {

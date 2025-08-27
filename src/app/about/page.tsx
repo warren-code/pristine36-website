@@ -248,21 +248,21 @@ export default function AboutPage() {
       <section style={{ padding: '6rem 0', background: 'linear-gradient(135deg, var(--secondary), var(--primary))', color: '#ffffff' }}>
         <div className="container text-center" style={{ maxWidth: '48rem' }}>
           <h2 className="text-white" style={{ marginBottom: '1rem' }}>
-            Ready to Work with Professionals?
+            Ready to Work With Us?
           </h2>
           <p style={{ fontSize: '1.125rem', marginBottom: '2rem', opacity: 0.9 }}>
-            Experience the Pristine36 difference with our specialist cleaning services.
+            Join our growing list of satisfied clients and transform your space today.
           </p>
           <div className="flex gap-4 justify-center" style={{ flexWrap: 'wrap' }}>
             <Link href="/book" style={{ textDecoration: 'none' }}>
               <Button size="lg" style={{ backgroundColor: 'white', color: 'var(--primary)', border: 'none', fontWeight: '600' }}>
-                Book Free Consultation
+                Start Your Free Quote
                 <ArrowRight style={{ marginLeft: '0.5rem', height: '1.25rem', width: '1.25rem' }} />
               </Button>
             </Link>
-            <Link href="/contact" style={{ textDecoration: 'none' }}>
+            <Link href="/services" style={{ textDecoration: 'none' }}>
               <Button size="lg" variant="outline" style={{ borderColor: 'white', color: 'white', backgroundColor: 'transparent' }}>
-                Contact Us
+                Explore Our Services
               </Button>
             </Link>
           </div>
