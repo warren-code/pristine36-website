@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle2, Upload, Calendar } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, Send, CheckCircle2, Upload } from 'lucide-react'
 import { CONTACT } from '@/components/Header'
 import Script from 'next/script'
 

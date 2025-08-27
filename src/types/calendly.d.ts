@@ -2,11 +2,13 @@ interface CalendlyWidget {
   initInlineWidget: (options: {
     url: string
     parentElement: Element | null
-    prefill?: any
-    utm?: any
+    prefill?: Record<string, unknown>
+    utm?: Record<string, string>
   }) => void
 }
 
-interface Window {
-  Calendly?: CalendlyWidget
+declare global {
+  interface Window {
+    Calendly?: CalendlyWidget
+  }
 }

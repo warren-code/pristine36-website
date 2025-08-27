@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Phone, Mail, ExternalLink, MapPin, Clock } from 'lucide-react'
+import { Phone, Mail, ExternalLink, Clock } from 'lucide-react'
 import { Logo } from './Logo'
 import { CONTACT } from './Header'
 
