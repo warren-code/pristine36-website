@@ -1,3 +1,5 @@
+export {}
+
 interface CalendlyWidget {
   initInlineWidget: (options: {
     url: string

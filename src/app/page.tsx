@@ -29,12 +29,6 @@ const stats = [
   { value: '1000+', label: 'Projects Completed' },
 ]
 
-const testimonial = {
-  quote: "Pristine36 has been instrumental in maintaining our commercial properties. Their kitchen deep cleaning service is thorough and compliant with all regulations.",
-  company: "JJ Properties",
-  service: "kitchen"
-}
-
 export default function Home() {
   return (
     <>
