@@ -1,10 +1,11 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle2, Upload } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, Send, CheckCircle2, Upload, Calendar } from 'lucide-react'
 import { CONTACT } from '@/components/Header'
+import Script from 'next/script'
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -85,6 +86,35 @@ export default function ContactPage() {
               Get in touch for a free consultation and quote for your specialist cleaning needs.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Calendly Widget Section */}
+      <section className="section" style={{ paddingTop: '4rem', paddingBottom: '4rem', backgroundColor: 'var(--card-bg)' }}>
+        <div className="container">
+          <div className="text-center" style={{ marginBottom: '3rem' }}>
+            <h2 style={{ color: 'white', marginBottom: '1rem' }}>Schedule Your Free Consultation</h2>
+            <p style={{ color: 'rgba(255, 255, 255, 0.9)', fontSize: '1.125rem', maxWidth: '600px', margin: '0 auto' }}>
+              Choose a convenient time for your initial consultation. Our specialist cleaning experts are ready to discuss your needs.
+            </p>
+          </div>
+          
+          {/* Calendly inline widget */}
+          <div 
+            className="calendly-inline-widget" 
+            data-url={CONTACT.calendly}
+            style={{ 
+              minWidth: '320px', 
+              height: '700px',
+              borderRadius: '1rem',
+              overflow: 'hidden',
+              boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)'
+            }}
+          />
+          <Script 
+            src="https://assets.calendly.com/assets/external/widget.js" 
+            strategy="lazyOnload"
+          />
         </div>
       </section>
 
@@ -418,47 +448,47 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                   <div>
-                    <div style={{ width: '2.5rem', height: '2.5rem', borderRadius: '0.5rem', backgroundColor: 'var(--card-bg)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginBottom: '0.5rem' }}>
+                    <div style={{ width: '2.5rem', height: '2.5rem', borderRadius: '0.5rem', backgroundColor: 'rgba(74, 222, 128, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginBottom: '0.5rem' }}>
                       <Phone style={{ height: '1.25rem', width: '1.25rem', color: 'var(--primary)' }} />
                     </div>
                     <p className="font-medium" style={{ color: 'white', marginBottom: '0.25rem' }}>Phone</p>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
-                      <a href={`tel:${CONTACT.phones[0]}`} className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.7)', textDecoration: 'none' }}>
+                      <a href={`tel:${CONTACT.phones[0]}`} className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255, 255, 255, 0.8)', textDecoration: 'none' }}>
                         {CONTACT.phones[0]}
                       </a>
-                      <a href={`tel:${CONTACT.phones[1]}`} className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.7)', textDecoration: 'none' }}>
+                      <a href={`tel:${CONTACT.phones[1]}`} className="text-sm hover:text-primary transition-colors" style={{ color: 'rgba(255, 255, 255, 0.8)', textDecoration: 'none' }}>
                         {CONTACT.phones[1]}
                       </a>
                     </div>
                   </div>
 
-                  <a href={`mailto:${CONTACT.email}`} className="flex items-start" style={{ gap: '1rem', textDecoration: 'none', color: 'inherit' }}>
-                    <div style={{ width: '2.5rem', height: '2.5rem', borderRadius: '0.5rem', backgroundColor: 'var(--card-bg)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  <a href={`mailto:${CONTACT.email}`} className="flex items-start hover:opacity-90 transition-opacity" style={{ gap: '1rem', textDecoration: 'none', color: 'inherit' }}>
+                    <div style={{ width: '2.5rem', height: '2.5rem', borderRadius: '0.5rem', backgroundColor: 'rgba(74, 222, 128, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                       <Mail style={{ height: '1.25rem', width: '1.25rem', color: 'var(--primary)' }} />
                     </div>
                     <div>
                       <p className="font-medium" style={{ color: 'white' }}>Email</p>
-                      <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.7)' }}>{CONTACT.email}</p>
+                      <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>{CONTACT.email}</p>
                     </div>
                   </a>
 
                   <div className="flex items-start" style={{ gap: '1rem' }}>
-                    <div style={{ width: '2.5rem', height: '2.5rem', borderRadius: '0.5rem', backgroundColor: 'var(--card-bg)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <div style={{ width: '2.5rem', height: '2.5rem', borderRadius: '0.5rem', backgroundColor: 'rgba(74, 222, 128, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                       <MapPin style={{ height: '1.25rem', width: '1.25rem', color: 'var(--primary)' }} />
                     </div>
                     <div>
                       <p className="font-medium" style={{ color: 'white' }}>Service Areas</p>
-                      <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.7)' }}>Greater London, Essex, Hertfordshire, Kent, Surrey</p>
+                      <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Greater London, Essex, Hertfordshire, Kent, Surrey</p>
                     </div>
                   </div>
 
                   <div className="flex items-start" style={{ gap: '1rem' }}>
-                    <div style={{ width: '2.5rem', height: '2.5rem', borderRadius: '0.5rem', backgroundColor: 'var(--card-bg)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <div style={{ width: '2.5rem', height: '2.5rem', borderRadius: '0.5rem', backgroundColor: 'rgba(74, 222, 128, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                       <Clock style={{ height: '1.25rem', width: '1.25rem', color: 'var(--primary)' }} />
                     </div>
                     <div>
                       <p className="font-medium" style={{ color: 'white' }}>Emergency Service</p>
-                      <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.7)' }}>24/7 Available</p>
+                      <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>24/7 Available</p>
                     </div>
                   </div>
                 </CardContent>
