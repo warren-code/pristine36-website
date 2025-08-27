@@ -1,22 +1,28 @@
 'use client'
 
 import Link from 'next/link'
-import { Phone, Mail, ExternalLink } from 'lucide-react'
+import { Phone, Mail, ExternalLink, MapPin, Clock } from 'lucide-react'
 import { Logo } from './Logo'
 import { CONTACT } from './Header'
 
 const footerLinks = {
   services: [
     { name: 'Kitchen Deep Clean', href: '/services#kitchen' },
+    { name: 'Post Pest Fouling', href: '/services#pest' },
+    { name: 'Grease Trap Service', href: '/services#grease' },
+    { name: 'Washroom Deep Clean', href: '/services#washroom' },
+    { name: 'Sanitisation', href: '/services#sanitisation' },
+    { name: 'Mould Clean', href: '/services#mould' },
     { name: 'Biohazard Cleaning', href: '/services#biohazard' },
-    { name: 'Grease Management', href: '/services#grease' },
-    { name: 'Mould Remediation', href: '/services#mould' },
+    { name: 'All Services', href: '/services' },
   ],
-  company: [
+  quickLinks: [
+    { name: 'Home', href: '/' },
     { name: 'About Us', href: '/about' },
-    { name: 'Our Coverage', href: '/coverage' },
-    { name: 'Certifications', href: '/about#certifications' },
-    { name: 'Insurance', href: '/about#insurance' },
+    { name: 'Our Clients', href: '/clients' },
+    { name: 'Coverage Areas', href: '/coverage' },
+    { name: 'Book Consultation', href: '/book' },
+    { name: 'Contact Us', href: '/contact' },
   ],
   areas: [
     { name: 'Greater London', href: '/coverage#london' },
@@ -29,93 +35,155 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: 'var(--card-bg)', borderTop: '1px solid var(--border)', width: '100%', overflowX: 'hidden' }}>
-      <div className="container" style={{ paddingTop: '3rem', paddingBottom: '3rem' }}>
-        <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '2rem' }}>
-          {/* Company Info */}
-          <div className="footer-company-info">
-            <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none', width: 'fit-content' }}>
-              <div style={{ width: '60px', height: '60px', flexShrink: 0 }}>
-                <Logo style={{ width: '100%', height: '100%' }} />
-              </div>
-              <span style={{ fontSize: '1.5rem', fontWeight: '700', color: 'var(--primary)' }}>
-                Pristine<span style={{ color: 'var(--secondary)' }}>36</span>
-              </span>
-            </Link>
-            <p className="text-gray-600" style={{ marginTop: '1rem' }}>
-              Professional specialist cleaning services for commercial and residential properties across Greater London and surrounding areas.
-            </p>
-            <div style={{ marginTop: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              <div>
-                <div className="flex items-center justify-center" style={{ width: '2.5rem', height: '2.5rem', borderRadius: '0.5rem', border: '1px solid var(--border)', backgroundColor: 'var(--background)', marginBottom: '0.5rem', float: 'left', marginRight: '1rem' }}>
-                  <Phone style={{ height: '1rem', width: '1rem' }} />
+    <footer style={{ backgroundColor: 'var(--background)', borderTop: '1px solid var(--border)', width: '100%' }}>
+      {/* Main Footer Content */}
+      <div style={{ backgroundColor: 'var(--card-bg)', width: '100%' }}>
+        <div className="container" style={{ paddingTop: '4rem', paddingBottom: '4rem' }}>
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '3rem',
+            marginBottom: '3rem'
+          }}>
+            {/* Company Info */}
+            <div className="lg:col-span-2">
+              <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none', marginBottom: '1.5rem' }}>
+                <div style={{ width: '48px', height: '48px', flexShrink: 0 }}>
+                  <Logo style={{ width: '100%', height: '100%' }} />
                 </div>
-                <div>
-                  <div className="text-sm text-gray-500">Call Us</div>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
-                    <a href={`tel:${CONTACT.phones[0]}`} className="font-medium text-white hover:text-primary transition-colors" style={{ textDecoration: 'none' }}>
+                <span style={{ fontSize: '1.75rem', fontWeight: '700', color: 'var(--primary)' }}>
+                  Pristine<span style={{ color: 'var(--secondary)' }}>36</span>
+                </span>
+              </Link>
+              <p className="text-gray-600" style={{ marginBottom: '1.5rem', maxWidth: '400px' }}>
+                Professional specialist cleaning services for commercial and residential properties across Greater London and surrounding areas. Available 24/7 for emergency cleaning.
+              </p>
+              
+              {/* Contact Info */}
+              <div style={{ display: 'grid', gap: '1rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                  <div style={{ 
+                    width: '2rem', 
+                    height: '2rem', 
+                    borderRadius: '0.5rem', 
+                    backgroundColor: 'rgba(74, 222, 128, 0.1)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0
+                  }}>
+                    <Phone style={{ width: '1rem', height: '1rem', color: 'var(--primary)' }} />
+                  </div>
+                  <div>
+                    <a href={`tel:${CONTACT.phones[0]}`} className="text-white hover:text-primary transition-colors" style={{ textDecoration: 'none', fontWeight: '500' }}>
                       {CONTACT.phones[0]}
                     </a>
-                    <a href={`tel:${CONTACT.phones[1]}`} className="font-medium text-white hover:text-primary transition-colors" style={{ textDecoration: 'none' }}>
+                    <span style={{ color: 'var(--border)', margin: '0 0.5rem' }}>|</span>
+                    <a href={`tel:${CONTACT.phones[1]}`} className="text-white hover:text-primary transition-colors" style={{ textDecoration: 'none', fontWeight: '500' }}>
                       {CONTACT.phones[1]}
                     </a>
                   </div>
                 </div>
+                
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                  <div style={{ 
+                    width: '2rem', 
+                    height: '2rem', 
+                    borderRadius: '0.5rem', 
+                    backgroundColor: 'rgba(74, 222, 128, 0.1)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0
+                  }}>
+                    <Mail style={{ width: '1rem', height: '1rem', color: 'var(--primary)' }} />
+                  </div>
+                  <a href={`mailto:${CONTACT.email}`} className="text-white hover:text-primary transition-colors" style={{ textDecoration: 'none', fontWeight: '500' }}>
+                    {CONTACT.email}
+                  </a>
+                </div>
+                
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                  <div style={{ 
+                    width: '2rem', 
+                    height: '2rem', 
+                    borderRadius: '0.5rem', 
+                    backgroundColor: 'rgba(74, 222, 128, 0.1)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0
+                  }}>
+                    <Clock style={{ width: '1rem', height: '1rem', color: 'var(--primary)' }} />
+                  </div>
+                  <span className="text-white" style={{ fontWeight: '500' }}>24/7 Emergency Service</span>
+                </div>
               </div>
-              <a href={`mailto:${CONTACT.email}`} className="flex items-center gap-4 text-gray-600 hover:text-white transition-colors" style={{ textDecoration: 'none', clear: 'both' }}>
-                <div className="flex items-center justify-center" style={{ width: '2.5rem', height: '2.5rem', borderRadius: '0.5rem', border: '1px solid var(--border)', backgroundColor: 'var(--background)' }}>
-                  <Mail style={{ height: '1rem', width: '1rem' }} />
-                </div>
-                <div>
-                  <div className="text-sm text-gray-500">Email Us</div>
-                  <div className="font-medium text-white">{CONTACT.email}</div>
-                </div>
-              </a>
+            </div>
+
+            {/* Services */}
+            <div>
+              <h3 style={{ 
+                fontSize: '1rem',
+                fontWeight: '600',
+                color: 'var(--primary)',
+                marginBottom: '1.5rem',
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em'
+              }}>Services</h3>
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                {footerLinks.services.map((link) => (
+                  <li key={link.name}>
+                    <Link href={link.href} className="text-gray-600 hover:text-white transition-colors duration-200" style={{ textDecoration: 'none', fontSize: '0.9375rem' }}>
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h3 style={{ 
+                fontSize: '1rem',
+                fontWeight: '600',
+                color: 'var(--primary)',
+                marginBottom: '1.5rem',
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em'
+              }}>Quick Links</h3>
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                {footerLinks.quickLinks.map((link) => (
+                  <li key={link.name}>
+                    <Link href={link.href} className="text-gray-600 hover:text-white transition-colors duration-200" style={{ textDecoration: 'none', fontSize: '0.9375rem' }}>
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Areas Served */}
+            <div>
+              <h3 style={{ 
+                fontSize: '1rem',
+                fontWeight: '600',
+                color: 'var(--primary)',
+                marginBottom: '1.5rem',
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em'
+              }}>Areas We Cover</h3>
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                {footerLinks.areas.map((link) => (
+                  <li key={link.name}>
+                    <Link href={link.href} className="text-gray-600 hover:text-white transition-colors duration-200" style={{ textDecoration: 'none', fontSize: '0.9375rem' }}>
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
-
-          {/* Services */}
-          <div>
-            <h3 className="font-semibold text-white" style={{ marginBottom: '1.5rem' }}>Services</h3>
-            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-              {footerLinks.services.map((link) => (
-                <li key={link.name}>
-                  <Link href={link.href} className="text-gray-600 hover:text-white transition-colors duration-200" style={{ textDecoration: 'none' }}>
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h3 className="font-semibold text-white" style={{ marginBottom: '1.5rem' }}>Company</h3>
-            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-              {footerLinks.company.map((link) => (
-                <li key={link.name}>
-                  <Link href={link.href} className="text-gray-600 hover:text-white transition-colors duration-200" style={{ textDecoration: 'none' }}>
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Areas Served */}
-          <div>
-            <h3 className="font-semibold text-white" style={{ marginBottom: '1.5rem' }}>Areas Served</h3>
-            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-              {footerLinks.areas.map((link) => (
-                <li key={link.name}>
-                  <Link href={link.href} className="text-gray-600 hover:text-white transition-colors duration-200" style={{ textDecoration: 'none' }}>
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
 
         {/* Company Info Section */}
         <div style={{ marginTop: '3rem', padding: '2rem', backgroundColor: 'var(--background)', borderRadius: '0.75rem' }}>
@@ -175,6 +243,7 @@ export default function Footer() {
               </Link>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </footer>
