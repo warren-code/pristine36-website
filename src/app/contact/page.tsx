@@ -1,11 +1,10 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle2, Upload } from 'lucide-react'
 import { CONTACT } from '@/components/Header'
-import Script from 'next/script'
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -21,22 +20,6 @@ export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [submitError, setSubmitError] = useState('')
-  const [calendlyLoaded, setCalendlyLoaded] = useState(false)
-
-  // Initialize Calendly widget
-  useEffect(() => {
-    if (typeof window !== 'undefined' && !calendlyLoaded) {
-      if (window.Calendly) {
-        window.Calendly.initInlineWidget({
-          url: CONTACT.calendly,
-          parentElement: document.querySelector('.calendly-inline-widget'),
-          prefill: {},
-          utm: {}
-        });
-        setCalendlyLoaded(true);
-      }
-    }
-  }, [calendlyLoaded])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -115,32 +98,22 @@ export default function ContactPage() {
             </p>
           </div>
           
-          {/* Calendly inline widget */}
-          <div 
-            className="calendly-inline-widget" 
-            data-url={CONTACT.calendly}
-            style={{ 
-              minWidth: '320px', 
-              height: '700px',
-              borderRadius: '1rem',
-              overflow: 'hidden',
-              boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)'
-            }}
-          />
-          <Script 
-            src="https://assets.calendly.com/assets/external/widget.js" 
-            strategy="afterInteractive"
-            onLoad={() => {
-              if (typeof window !== 'undefined' && window.Calendly) {
-                window.Calendly.initInlineWidget({
-                  url: CONTACT.calendly,
-                  parentElement: document.querySelector('.calendly-inline-widget'),
-                  prefill: {},
-                  utm: {}
-                });
-              }
-            }}
-          />
+          {/* Calendly inline widget - Using iframe approach */}
+          <div style={{ position: 'relative', width: '100%' }}>
+            <iframe
+              src={`${CONTACT.calendly}?embed_domain=${typeof window !== 'undefined' ? window.location.hostname : ''}&embed_type=Inline`}
+              width="100%"
+              height="700"
+              frameBorder="0"
+              style={{
+                borderRadius: '1rem',
+                overflow: 'hidden',
+                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
+                backgroundColor: 'var(--card-bg)'
+              }}
+              title="Schedule a consultation"
+            />
+          </div>
         </div>
       </section>
 
