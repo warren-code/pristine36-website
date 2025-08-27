@@ -14,189 +14,189 @@ const allServices = [
   {
     id: 'kitchen',
     title: 'Kitchen Deep Clean',
-    description: 'Keep your kitchen safe, compliant, and operating at peak efficiency with our professional deep cleaning',
+    description: 'Sleep soundly knowing your kitchen is safe from fire hazards and ready to pass any inspection',
     icon: Sparkles,
     features: [
-      'Prevent fire hazards and insurance issues',
-      'Pass health inspections with confidence',
-      'Extend equipment life and reduce breakdowns',
-      'Improve air quality for staff comfort',
-      'Receive compliance certificates for peace of mind'
+      'You'll prevent costly fire damage and keep your insurance valid',
+      'You'll pass every health inspection on the first try',
+      'Your equipment will last years longer, saving thousands',
+      'Your staff will work more comfortably in cleaner air',
+      'You'll have compliance certificates ready for any inspector'
     ],
     keywords: ['kitchen extract cleaning', 'commercial kitchen deep cleaning', 'tr19 grease', 'ductwork cleaning', 'canopy cleaning London']
   },
   {
     id: 'pest',
     title: 'Post Pest Fouling Cleans',
-    description: 'Restore your property to a safe, healthy environment after pest infestations',
+    description: 'Get your property back to safe, healthy conditions so you can welcome people inside again',
     icon: Bug,
     features: [
-      'Protect your health from harmful pathogens',
-      'Eliminate unpleasant odours completely',
-      'Make your space safe for occupancy again',
-      'Prevent recurring infestations',
-      'Get expert advice to avoid future problems'
+      'You'll protect everyone's health from dangerous diseases',
+      'You'll breathe fresh air again - no more embarrassing odours',
+      'You'll confidently reopen your space to tenants or customers',
+      'You'll stop pests from coming back with our prevention tips',
+      'You'll know exactly how to avoid this nightmare again'
     ]
   },
   {
     id: 'grease',
     title: 'Grease Trap Service',
-    description: 'Avoid costly blockages, fines, and shutdowns with regular grease management',
+    description: 'Keep your drains flowing and avoid surprise shutdowns that cost you thousands in lost revenue',
     icon: Droplets,
     features: [
-      'Prevent expensive drainage blockages',
-      'Stay compliant with environmental regulations',
-      'Avoid hefty fines and legal issues',
-      'Keep your kitchen running smoothly',
-      'Save money with scheduled maintenance plans'
+      'You'll never face emergency drain blockages during service',
+      'You'll always meet environmental regulations effortlessly',
+      'You'll avoid fines that can reach £80,000 or more',
+      'Your kitchen will run smoothly through every busy shift',
+      'You'll save 40% compared to emergency callout charges'
     ],
     keywords: ['grease disposal London regulations', 'grease management', 'fog waste management', 'grease filter cleaning']
   },
   {
     id: 'washroom',
     title: 'Washroom Deep Clean',
-    description: 'Create a positive impression with spotless, hygienic washroom facilities',
+    description: 'Turn your washrooms into a positive talking point that impresses every visitor',
     icon: SprayCan,
     features: [
-      'Impress customers with pristine facilities',
-      'Eliminate odours that damage your reputation',
-      'Restore fixtures to like-new condition',
-      'Reduce spread of illness among staff',
-      'Get measurable cleanliness with ATP testing'
+      'Your customers will compliment your spotless facilities',
+      'You'll eliminate embarrassing odours permanently',
+      'Your fixtures will sparkle like opening day again',
+      'You'll cut staff sick days by reducing germ spread',
+      'You'll have scientific proof of hygiene with ATP results'
     ]
   },
   {
     id: 'sanitisation',
     title: 'Sanitisation & Disinfection',
-    description: 'Create a safer environment for your staff and customers with proven disinfection',
+    description: 'Give everyone confidence to enter your space knowing it's scientifically proven safe',
     icon: Shield,
     features: [
-      'Protect against viruses and harmful bacteria',
-      'Reduce sick days and boost productivity',
-      'Show customers you prioritise their safety',
-      'Get scientific proof with ATP testing',
-      'Receive certification for compliance and marketing'
+      'You'll protect everyone from invisible health threats',
+      'You'll keep your team healthy and productive year-round',
+      'Your customers will see you care about their wellbeing',
+      'You'll have lab-grade proof your space is truly clean',
+      'You'll display certificates that boost customer confidence'
     ],
     keywords: ['disinfection services London', 'atp testing', 'coronavirus biohazard decontamination', 'pathogen control solutions']
   },
   {
     id: 'mould',
     title: 'Mould Clean',
-    description: 'Protect your health and property value with professional mould remediation',
+    description: 'Stop worrying about your family's health and protect your property's value from hidden damage',
     icon: Home,
     features: [
-      'Breathe easier with improved air quality',
-      'Protect your family\'s health from mould spores',
-      'Preserve your property value and appeal',
-      'Prevent costly structural damage',
-      'Stop mould returning with prevention strategies'
+      'You'll breathe clean, healthy air in every room again',
+      'Your family will be safe from respiratory problems',
+      'You'll maintain your property's value and saleability',
+      'You'll avoid £10,000+ structural repair bills',
+      'You'll know exactly how to keep mould away forever'
     ]
   },
   {
     id: 'bar',
     title: 'Bar Cleans',
-    description: 'Keep your venue inviting and your drinks tasting perfect with specialist bar cleaning',
+    description: 'Serve perfect-tasting drinks every time and keep customers coming back to your spotless venue',
     icon: Wine,
     features: [
-      'Serve better-tasting drinks with clean lines',
-      'Create a welcoming atmosphere for customers',
-      'Reduce waste from spoiled products',
-      'Prevent equipment breakdowns and closures',
-      'Stay compliant with health regulations'
+      'Your drinks will taste exactly as intended, every pour',
+      'Customers will choose your clean bar over competitors',
+      'You'll stop pouring profits down the drain from waste',
+      'You'll avoid surprise closures from equipment failure',
+      'You'll ace every health inspection without stress'
     ]
   },
   {
     id: 'carpet',
     title: 'Carpet Cleaning',
-    description: 'Extend carpet life and create healthier spaces with professional deep cleaning',
+    description: 'Save thousands on replacements while creating a healthier, more impressive workspace',
     icon: Sofa,
     features: [
-      'Save thousands on carpet replacement costs',
-      'Remove unsightly stains that hurt your image',
-      'Eliminate trapped allergens and dust mites',
-      'Get back to business faster with quick drying',
-      'Choose eco-friendly options for sustainability'
+      'You'll extend carpet life by 5+ years, saving thousands',
+      'Your space will look professional and well-maintained',
+      'You'll reduce allergy symptoms for staff and visitors',
+      'You'll be back in business within hours, not days',
+      'You'll meet your sustainability goals with green cleaning'
     ]
   },
   {
     id: 'bin',
     title: 'Bin Store Cleaning',
-    description: 'Transform your bin areas from eyesores to clean, manageable spaces',
+    description: 'Stop complaints and pest problems while protecting your property's reputation and value',
     icon: Building,
     features: [
-      'Eliminate foul odours affecting your property',
-      'Prevent pest infestations and health risks',
-      'Avoid complaints from tenants or neighbours',
-      'Maintain property value and appeal',
-      'Save time with regular maintenance plans'
+      'You'll eliminate embarrassing smells wafting indoors',
+      'You'll stop rats and flies before they become nightmares',
+      'You'll turn complaints into compliments from tenants',
+      'You'll protect your property's kerb appeal and value',
+      'You'll never have to think about bin cleaning again'
     ]
   },
   {
     id: 'biohazard',
     title: 'Post Trauma & After Death Clean',
-    description: 'Compassionate support during difficult times with professional biohazard cleaning',
+    description: 'Let us handle the difficult parts so you can focus on what matters most during hard times',
     icon: Heart,
     features: [
-      'Let us handle the difficult cleanup tasks',
-      'Return properties to safe, habitable condition',
-      'Work with sensitivity and complete discretion',
-      'Meet insurance and legal requirements',
-      'Available 24/7 when you need us most'
+      'You won't have to face traumatic cleanup yourself',
+      'You'll have a safe, clean space to return to',
+      'Your privacy will be completely protected throughout',
+      'You'll meet all insurance and legal obligations',
+      'You'll have immediate help whenever you need us'
     ],
     keywords: ['trauma cleaning', 'crime scene cleaning', 'sharps removal service London', 'blood and bodily fluid cleaning', 'biohazard cleaning']
   },
   {
     id: 'high-level',
     title: 'High Level Clean',
-    description: 'Maintain a professional appearance and healthy air quality with high-level cleaning',
+    description: 'Brighten your space, cut energy bills, and impress visitors with professionally cleaned heights',
     icon: Building2,
     features: [
-      'Brighten your space with clean light fixtures',
-      'Improve air quality and reduce energy costs',
-      'Project professionalism to clients and visitors',
-      'Extend the life of expensive HVAC systems',
-      'Stay safe with fully compliant procedures'
+      'Your space will be 30% brighter with clean fixtures',
+      'You'll cut energy costs by up to 15% annually',
+      'Visitors will notice your attention to every detail',
+      'Your HVAC systems will last years longer',
+      'You'll meet all safety standards without worry'
     ],
     keywords: ['air handling unit (ahu)', 'indoor air quality (iaq)', 'laundry extraction system cleaning']
   },
   {
     id: 'flood',
     title: 'Post Flood Sanitisation',
-    description: 'Get your property back to normal quickly after flood damage',
+    description: 'Get back to business fast and prevent hidden damage that appears months later',
     icon: Waves,
     features: [
-      'Minimise downtime and get back to business',
-      'Prevent dangerous mould growth',
-      'Save your property from long-term damage',
-      'Work with insurance companies on your behalf',
-      'Available 24/7 when disaster strikes'
+      'You'll reopen days faster than with other methods',
+      'You'll prevent £15,000+ mould remediation costs',
+      'You'll save your property from rot and decay',
+      'We'll handle the insurance paperwork headache',
+      'You'll have help within 2 hours, day or night'
     ]
   },
   {
     id: 'needles',
     title: 'Needle Picking',
-    description: 'Protect your community from dangerous sharps with professional removal',
+    description: 'Keep your community safe from dangerous sharps while protecting yourself from liability',
     icon: Syringe,
     features: [
-      'Keep children and the public safe from harm',
-      'Reduce liability and legal risks',
-      'Restore confidence in public spaces',
-      'Meet duty of care obligations',
-      'Trust certified professionals to handle risks'
+      'Children can play safely without needle stick risks',
+      'You'll avoid lawsuits and legal complications',
+      'People will feel safe using your spaces again',
+      'You'll exceed your duty of care requirements',
+      'Our certified team handles all the dangerous work'
     ],
     keywords: ['sharps disposal', 'sharps removal service London']
   },
   {
     id: 'other',
     title: 'Other Specialist Services',
-    description: 'Whatever your cleaning challenge, we have the solution through our expert network',
+    description: 'No cleaning challenge is too unusual - we'll find the perfect solution for your specific needs',
     icon: AlertTriangle,
     features: [
-      'Get your deposit back with tenancy cleaning',
-      'Remove construction dust and debris completely',
-      'Handle sensitive hoarding situations with care',
-      'Restore fire-damaged properties professionally',
-      'Access any specialist service you need'
+      'You'll secure your full deposit with tenancy cleaning',
+      'You'll breathe easily in dust-free renovated spaces',
+      'Sensitive situations handled with total discretion',
+      'Fire damage reversed to pre-incident condition',
+      'One call solves any cleaning problem you have'
     ],
     keywords: ['end of tenancy cleaning', 'end of tenancy deep clean London', 'after builder cleaning', 'hoarder cleaning', 'compliance certificate cleaning']
   },
@@ -277,7 +277,7 @@ export default function ServicesPage() {
                     ) : (
                       <Link href="/book" style={{ textDecoration: 'none' }}>
                         <Button variant="outline" style={{ width: '100%', position: 'relative' }}>
-                          Get Quote
+                          Get Your Free Quote
                           <ArrowRight style={{ marginLeft: '0.5rem', height: '1rem', width: '1rem' }} />
                         </Button>
                       </Link>
@@ -291,24 +291,24 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section style={{ paddingTop: '6rem', paddingBottom: '6rem', background: 'linear-gradient(135deg, var(--secondary), var(--primary))' }}>
+      <section className="cta-section" style={{ paddingTop: '6rem', paddingBottom: '6rem', background: 'linear-gradient(135deg, var(--secondary), var(--primary))' }}>
         <div className="container" style={{ maxWidth: '48rem', textAlign: 'center' }}>
           <h2 className="font-bold" style={{ marginBottom: '1rem', color: 'white' }}>
-            Need a Custom Cleaning Solution?
+            Can't Find What You Need?
           </h2>
           <p className="text-lg" style={{ marginBottom: '2rem', color: 'rgba(255, 255, 255, 0.9)' }}>
             We work with trusted subcontractors to provide any specialist cleaning service you need.
           </p>
-          <div className="flex gap-4 justify-center" style={{ flexWrap: 'wrap' }}>
+          <div className="flex gap-4 justify-center btn-group" style={{ flexWrap: 'wrap' }}>
             <Link href="/book" style={{ textDecoration: 'none' }}>
-              <Button size="lg" style={{ backgroundColor: 'white', color: 'var(--primary)', fontWeight: '600', border: 'none' }}>
-                Book Free Consultation
+              <Button size="lg" className="btn-primary" style={{ backgroundColor: 'white', color: 'var(--primary)', fontWeight: '700', border: 'none' }}>
+                Get Your Custom Solution Now
                 <ArrowRight style={{ marginLeft: '0.5rem', height: '1.25rem', width: '1.25rem' }} />
               </Button>
             </Link>
             <a href="tel:07860249950" style={{ textDecoration: 'none' }}>
               <Button size="lg" variant="outline" style={{ borderColor: 'white', color: 'white', backgroundColor: 'transparent' }}>
-                Call Us Now
+                Call Us: 07860249950
               </Button>
             </a>
           </div>

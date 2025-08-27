@@ -31,7 +31,8 @@ const stats = [
 
 const testimonial = {
   quote: "Pristine36 has been instrumental in maintaining our commercial properties. Their kitchen deep cleaning service is thorough and compliant with all regulations.",
-  company: "JJ Properties"
+  company: "JJ Properties",
+  service: "kitchen"
 }
 
 export default function Home() {
@@ -41,19 +42,19 @@ export default function Home() {
       <section className="section section-light" style={{ minHeight: '80vh', display: 'flex', alignItems: 'center' }}>
         <div className="container">
           <div style={{ maxWidth: '64rem' }}>
-            <h1 className="animate-fade-in">
+            <h1 className="hero-title animate-fade-in">
               Professional Specialist Cleaning Services in London
             </h1>
-            <p className="text-xl animate-slide-up" style={{ animationDelay: '0.1s', marginBottom: '2rem', color: 'rgba(255, 255, 255, 0.8)' }}>
+            <p className="hero-subtitle animate-slide-up" style={{ animationDelay: '0.1s', marginBottom: '2rem' }}>
               TR19 compliant kitchen extract cleaning, biohazard decontamination, and commercial deep cleaning across Greater London and surrounding areas.
             </p>
-            <div className="flex gap-4 animate-slide-up" style={{ animationDelay: '0.2s', flexWrap: 'wrap' }}>
-              <Link href="/services" className="btn btn-primary">
-                View Our Services
+            <div className="flex gap-4 animate-slide-up btn-group" style={{ animationDelay: '0.2s', flexWrap: 'wrap' }}>
+              <Link href="/services" className="btn btn-primary hero-cta">
+                Explore Our Services
                 <ArrowRight style={{ width: '1rem', height: '1rem', marginLeft: '0.5rem' }} />
               </Link>
               <Link href="/book" className="btn btn-secondary">
-                Get Your Free Quote
+                Get My Free Estimate Now
               </Link>
             </div>
             <div className="flex gap-8 animate-slide-up" style={{ marginTop: '3rem', animationDelay: '0.3s', flexWrap: 'wrap' }}>
@@ -80,8 +81,8 @@ export default function Home() {
           <div className="stats-grid">
             {stats.map((stat, index) => (
               <div key={index} className="text-center" style={{ padding: '1rem 0.5rem' }}>
-                <div className="text-3xl md:text-4xl font-bold" style={{ marginBottom: '0.25rem', color: 'var(--primary)' }}>{stat.value}</div>
-                <div className="text-sm md:text-base" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>{stat.label}</div>
+                <div className="stat-value">{stat.value}</div>
+                <div className="stat-label">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -116,8 +117,8 @@ export default function Home() {
             })}
           </div>
           <div className="text-center" style={{ marginTop: '3rem' }}>
-            <Link href="/services" className="btn btn-secondary">
-              Explore All 15+ Services
+            <Link href="/services" className="btn btn-secondary btn-lg">
+              Discover All 15+ Specialist Services
               <ArrowRight style={{ width: '1rem', height: '1rem', marginLeft: '0.5rem' }} />
             </Link>
           </div>
@@ -131,7 +132,7 @@ export default function Home() {
             <h2 style={{ marginBottom: '3rem' }}>What Our Clients Say</h2>
             <div className="card">
               <blockquote className="text-2xl font-medium" style={{ marginBottom: '2rem', color: 'white' }}>
-                &ldquo;{testimonial.quote}&rdquo;
+                &ldquo;Pristine36 has been instrumental in maintaining our commercial properties. Their <Link href="/services#kitchen" style={{ color: 'var(--primary)', textDecoration: 'underline' }}>kitchen deep cleaning service</Link> is thorough and compliant with all regulations.&rdquo;
               </blockquote>
               <div className="flex justify-center">
                 <div>
@@ -140,6 +141,9 @@ export default function Home() {
                   <div style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
                     Commercial Property Management
                   </div>
+                  <Link href="/clients" style={{ marginTop: '0.75rem', display: 'inline-block', color: 'var(--secondary)', fontSize: '0.875rem', textDecoration: 'none' }}>
+                    Read more testimonials →
+                  </Link>
                 </div>
               </div>
             </div>
@@ -192,8 +196,8 @@ export default function Home() {
             <div className="mobile-padding" style={{ borderRadius: '1rem', backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)' }}>
               <h3 className="text-2xl font-semibold" style={{ marginBottom: '1.5rem', color: 'white' }}>Get Started Today</h3>
               <p style={{ marginBottom: '2rem', color: 'rgba(255, 255, 255, 0.8)' }}>Contact us for a free consultation and discover how our specialist cleaning services can benefit your business.</p>
-              <Link href="/book" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
-                Get My Free Estimate
+              <Link href="/book" className="btn btn-primary btn-lg btn-pulse" style={{ width: '100%', justifyContent: 'center' }}>
+                Get My Free Estimate Today
                 <ArrowRight style={{ width: '1rem', height: '1rem', marginLeft: '0.5rem' }} />
               </Link>
             </div>
@@ -202,17 +206,18 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section style={{ padding: '5rem 0', background: 'linear-gradient(135deg, var(--secondary), var(--primary))' }}>
+      <section className="cta-section" style={{ padding: '5rem 0', background: 'linear-gradient(135deg, var(--secondary), var(--primary))' }}>
         <div className="container text-center">
-          <h2 className="text-white" style={{ marginBottom: '1rem' }}>Ready to Experience Professional Cleaning?</h2>
+          <h2 className="text-white" style={{ marginBottom: '1rem' }}>Ready to Transform Your Space?</h2>
           <p className="text-xl" style={{ color: 'rgba(255, 255, 255, 0.9)', marginBottom: '2rem', maxWidth: '32rem', margin: '0 auto 2rem' }}>
             Join hundreds of satisfied clients who trust Pristine36 for their specialist cleaning needs.
           </p>
-          <div className="flex gap-4 justify-center" style={{ flexWrap: 'wrap' }}>
-            <Link href="/book" className="btn" style={{ backgroundColor: 'white', color: 'var(--primary)', fontWeight: '600', padding: '1rem 2rem', borderRadius: '9999px', fontSize: '1.125rem' }}>
-              Start Your Free Quote
+          <div className="flex gap-4 justify-center btn-group" style={{ flexWrap: 'wrap' }}>
+            <Link href="/book" className="btn btn-primary btn-lg">
+              Get Your Free Quote Now
+              <ArrowRight style={{ width: '1.25rem', height: '1.25rem' }} />
             </Link>
-            <a href="tel:07860249950" className="btn btn-outline" style={{ borderColor: 'white', color: 'white', backgroundColor: 'transparent' }}>
+            <a href="tel:07860249950" className="btn btn-outline btn-lg" style={{ borderColor: 'white', color: 'white', backgroundColor: 'transparent' }}>
               Call Now: 07860249950
             </a>
           </div>

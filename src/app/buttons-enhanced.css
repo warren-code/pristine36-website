@@ -1,0 +1,268 @@
+/* Enhanced Button Styles for Better CTA Visibility */
+
+/* Primary CTA Buttons - Maximum Visual Impact */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary) 0%, #3CCF6E 100%);
+  color: #1a1a1a; /* High contrast dark text on green background */
+  border-radius: 9999px;
+  font-weight: 700;
+  box-shadow: 
+    0 4px 15px rgba(74, 222, 128, 0.4),
+    0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1);
+  position: relative;
+  overflow: hidden;
+  font-size: 1.125rem;
+  padding: 1rem 2.5rem;
+  min-height: 56px; /* Larger touch target */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.5s ease;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #3CCF6E 0%, var(--primary) 100%);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 
+    0 8px 30px rgba(74, 222, 128, 0.6),
+    0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:active {
+  transform: translateY(-1px) scale(1.02);
+}
+
+/* Secondary CTA Buttons - Strong but Subordinate */
+.btn-secondary {
+  background: linear-gradient(135deg, var(--secondary) 0%, #1BB3A1 100%);
+  color: #1a1a1a; /* High contrast dark text */
+  border: 2px solid transparent;
+  border-radius: 9999px;
+  font-weight: 700;
+  box-shadow: 
+    0 4px 15px rgba(32, 201, 182, 0.4),
+    0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.0625rem;
+  padding: 0.875rem 2rem;
+  min-height: 52px;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #1BB3A1 0%, var(--secondary) 100%);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 
+    0 8px 25px rgba(32, 201, 182, 0.5),
+    0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Outline Buttons - Clear but Less Prominent */
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary);
+  border: 3px solid var(--primary);
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-outline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--primary);
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.btn-outline:hover::before {
+  width: 100%;
+}
+
+.btn-outline:hover {
+  color: #1a1a1a;
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(74, 222, 128, 0.4);
+}
+
+/* Hero CTAs - Extra Large for Maximum Impact */
+.hero-cta {
+  font-size: 1.25rem !important;
+  padding: 1.25rem 3rem !important;
+  min-height: 64px !important;
+  box-shadow: 
+    0 6px 20px rgba(74, 222, 128, 0.5),
+    0 3px 10px rgba(0, 0, 0, 0.15) !important;
+}
+
+.hero-cta:hover {
+  box-shadow: 
+    0 10px 35px rgba(74, 222, 128, 0.7),
+    0 5px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Button Size Variants */
+.btn-lg {
+  font-size: 1.25rem;
+  padding: 1.125rem 2.5rem;
+  min-height: 60px;
+}
+
+.btn-sm {
+  font-size: 0.9375rem;
+  padding: 0.625rem 1.5rem;
+  min-height: 44px;
+}
+
+/* Mobile Button Enhancements */
+@media (max-width: 640px) {
+  .btn {
+    width: 100%;
+    justify-content: center;
+    min-height: 52px;
+    font-size: 1rem;
+  }
+  
+  .hero-cta {
+    font-size: 1.125rem !important;
+    padding: 1rem 2rem !important;
+    min-height: 56px !important;
+  }
+  
+  .btn-group {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+  
+  .btn-group .btn {
+    width: 100%;
+  }
+}
+
+/* Visual Feedback States */
+.btn:focus-visible {
+  outline: 3px solid var(--secondary);
+  outline-offset: 3px;
+  box-shadow: 
+    0 0 0 6px rgba(32, 201, 182, 0.25),
+    0 4px 15px rgba(74, 222, 128, 0.4);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* Pulse Animation for Critical CTAs */
+@keyframes pulse {
+  0% {
+    box-shadow: 
+      0 0 0 0 rgba(74, 222, 128, 0.7),
+      0 4px 15px rgba(74, 222, 128, 0.4);
+  }
+  70% {
+    box-shadow: 
+      0 0 0 15px rgba(74, 222, 128, 0),
+      0 4px 15px rgba(74, 222, 128, 0.4);
+  }
+  100% {
+    box-shadow: 
+      0 0 0 0 rgba(74, 222, 128, 0),
+      0 4px 15px rgba(74, 222, 128, 0.4);
+  }
+}
+
+.btn-pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Icon Alignment in Buttons */
+.btn svg {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover svg {
+  transform: translateX(4px);
+}
+
+/* Button Groups */
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Ensure buttons in cards are visually distinct */
+.card .btn {
+  margin-top: auto; /* Push to bottom of card */
+  width: 100%;
+  justify-content: center;
+}
+
+/* CTA Section Buttons - Extra emphasis */
+.cta-section .btn-primary {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+  color: var(--primary);
+  font-size: 1.25rem;
+  padding: 1.125rem 3rem;
+  box-shadow: 
+    0 6px 25px rgba(255, 255, 255, 0.3),
+    0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta-section .btn-primary:hover {
+  background: linear-gradient(135deg, #f0f0f0 0%, #ffffff 100%);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 
+    0 10px 40px rgba(255, 255, 255, 0.4),
+    0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Loading state */
+.btn-loading {
+  position: relative;
+  color: transparent;
+  pointer-events: none;
+}
+
+.btn-loading::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  margin: -10px 0 0 -10px;
+  border: 2px solid #ffffff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

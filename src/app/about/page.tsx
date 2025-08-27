@@ -81,7 +81,7 @@ export default function AboutPage() {
                 is unique, which is why we offer a comprehensive range of specialist services.
               </p>
               <p className="text-lg" style={{ marginBottom: '1rem', color: 'rgba(255, 255, 255, 0.9)' }}>
-                From commercial kitchen deep cleaning to sensitive biohazard decontamination, 
+                From <Link href="/services#kitchen" style={{ color: 'var(--primary)', textDecoration: 'underline' }}>commercial kitchen deep cleaning</Link> to sensitive <Link href="/services#biohazard" style={{ color: 'var(--primary)', textDecoration: 'underline' }}>biohazard decontamination</Link>, 
                 our team approaches every job with professionalism, discretion, and attention to detail.
               </p>
               <p className="text-lg" style={{ marginBottom: '1rem', color: 'rgba(255, 255, 255, 0.9)' }}>
@@ -171,8 +171,8 @@ export default function AboutPage() {
             </CardHeader>
             <CardContent>
               <p style={{ marginBottom: '1rem', color: 'rgba(255, 255, 255, 0.9)' }}>
-                We maintain comprehensive insurance coverage for all our cleaning services, 
-                excluding high-level work. However, we can still accommodate high-level cleaning 
+                We maintain comprehensive insurance coverage for all our <Link href="/services" style={{ color: 'var(--secondary)', textDecoration: 'underline' }}>cleaning services</Link>, 
+                excluding high-level work. However, we can still accommodate <Link href="/services#high-level" style={{ color: 'var(--secondary)', textDecoration: 'underline' }}>high-level cleaning</Link> 
                 jobs through our network of specialist partners.
               </p>
               <div className="flex items-center" style={{ gap: '0.5rem', color: 'var(--primary)' }}>

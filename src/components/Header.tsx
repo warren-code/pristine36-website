@@ -13,10 +13,13 @@ export const CONTACT = {
 }
 
 const navigation = [
-  { name: 'Services', href: '/services' },
+  { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
+  { name: 'Services', href: '/services' },
   { name: 'Coverage', href: '/coverage' },
+  { name: 'Gallery', href: '/gallery' },
   { name: 'Clients', href: '/clients' },
+  { name: 'Book', href: '/book' },
   { name: 'Contact', href: '/contact' },
 ]
 
@@ -131,7 +134,7 @@ export default function Header() {
   const desktopNavStyle = {
     display: 'none',
     alignItems: 'center',
-    gap: '2.5rem',
+    gap: '1.75rem',
   }
 
   const mobileMenuStyle = {
@@ -164,6 +167,7 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 className="text-gray-600 hover:text-white font-medium transition-colors duration-200"
+                style={{ fontSize: '0.95rem' }}
               >
                 {item.name}
               </Link>
@@ -171,12 +175,13 @@ export default function Header() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="hidden lg:flex items-center gap-4">
-            <div className="flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-3">
+            <div className="hidden xl:flex items-center gap-3">
               <a
                 href={`tel:${CONTACT.phones[0]}`}
                 className="flex items-center gap-2 text-gray-600 hover:text-white font-medium transition-colors"
                 title="Call us directly"
+                style={{ fontSize: '0.875rem' }}
               >
                 <Phone style={{ width: '1rem', height: '1rem' }} />
                 <span>{CONTACT.phones[0]}</span>
@@ -186,6 +191,7 @@ export default function Header() {
                 href={`tel:${CONTACT.phones[1]}`}
                 className="text-gray-600 hover:text-white font-medium transition-colors"
                 title="Alternative number"
+                style={{ fontSize: '0.875rem' }}
               >
                 {CONTACT.phones[1]}
               </a>
@@ -195,6 +201,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
+              style={{ padding: '0.75rem 1.5rem', fontSize: '0.9375rem' }}
             >
               Book Consultation
             </a>
