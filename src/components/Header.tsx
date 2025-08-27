@@ -149,8 +149,8 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }} aria-label="Pristine36 Home">
               <div style={{ 
-                width: '48px', 
-                height: '48px', 
+                width: '78px', 
+                height: '78px', 
                 flexShrink: 0,
                 position: 'relative'
               }}>

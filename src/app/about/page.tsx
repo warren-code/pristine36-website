@@ -255,7 +255,7 @@ export default function AboutPage() {
           </p>
           <div className="flex gap-4 justify-center" style={{ flexWrap: 'wrap' }}>
             <Link href="/contact" style={{ textDecoration: 'none' }}>
-              <Button size="lg" style={{ backgroundColor: 'white', color: 'var(--primary)', border: 'none', fontWeight: '600' }}>
+              <Button size="lg" style={{ backgroundColor: 'var(--background)', color: 'white', border: 'none', fontWeight: '600' }}>
                 Start Your Free Quote
                 <ArrowRight style={{ marginLeft: '0.5rem', height: '1.25rem', width: '1.25rem' }} />
               </Button>

@@ -50,8 +50,8 @@ export default function Footer() {
             <div className="lg:col-span-2">
               <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none', marginBottom: '1.5rem' }}>
                 <div style={{ 
-                  width: '48px', 
-                  height: '48px', 
+                  width: '78px', 
+                  height: '78px', 
                   flexShrink: 0,
                   position: 'relative'
                 }}>

@@ -101,7 +101,7 @@ export default function ContactPage() {
                   Schedule a free consultation with our specialist cleaning experts
                 </p>
                 <a href={CONTACT.calendly} target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" style={{ backgroundColor: 'white', color: 'var(--primary)', border: 'none', fontWeight: '600' }}>
+                  <Button size="lg" style={{ backgroundColor: 'var(--background)', color: 'white', border: 'none', fontWeight: '600' }}>
                     Book Your Free Consultation
                   </Button>
                 </a>

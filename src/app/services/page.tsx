@@ -301,7 +301,7 @@ export default function ServicesPage() {
           </p>
           <div className="flex gap-4 justify-center btn-group" style={{ flexWrap: 'wrap' }}>
             <Link href="/contact" style={{ textDecoration: 'none' }}>
-              <Button size="lg" className="btn-primary" style={{ backgroundColor: 'white', color: 'var(--primary)', fontWeight: '700', border: 'none' }}>
+              <Button size="lg" className="btn-primary" style={{ backgroundColor: 'var(--background)', color: 'white', fontWeight: '700', border: 'none' }}>
                 Get Your Custom Solution Now
                 <ArrowRight style={{ marginLeft: '0.5rem', height: '1.25rem', width: '1.25rem' }} />
               </Button>
