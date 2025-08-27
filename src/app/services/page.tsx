@@ -275,7 +275,7 @@ export default function ServicesPage() {
                         </a>
                       </>
                     ) : (
-                      <Link href="/book" style={{ textDecoration: 'none' }}>
+                      <Link href="/contact" style={{ textDecoration: 'none' }}>
                         <Button variant="outline" style={{ width: '100%', position: 'relative' }}>
                           Get Your Free Quote
                           <ArrowRight style={{ marginLeft: '0.5rem', height: '1rem', width: '1rem' }} />
@@ -300,7 +300,7 @@ export default function ServicesPage() {
             We work with trusted subcontractors to provide any specialist cleaning service you need.
           </p>
           <div className="flex gap-4 justify-center btn-group" style={{ flexWrap: 'wrap' }}>
-            <Link href="/book" style={{ textDecoration: 'none' }}>
+            <Link href="/contact" style={{ textDecoration: 'none' }}>
               <Button size="lg" className="btn-primary" style={{ backgroundColor: 'white', color: 'var(--primary)', fontWeight: '700', border: 'none' }}>
                 Get Your Custom Solution Now
                 <ArrowRight style={{ marginLeft: '0.5rem', height: '1.25rem', width: '1.25rem' }} />

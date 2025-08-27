@@ -21,8 +21,8 @@ const footerLinks = {
     { name: 'About Us', href: '/about' },
     { name: 'Our Clients', href: '/clients' },
     { name: 'Coverage Areas', href: '/coverage' },
-    { name: 'Book Consultation', href: '/book' },
     { name: 'Contact Us', href: '/contact' },
+    { name: 'Book Consultation', href: '/contact#calendly' },
   ],
   areas: [
     { name: 'Greater London', href: '/coverage#london' },
@@ -41,9 +41,10 @@ export default function Footer() {
         <div className="container" style={{ paddingTop: '4rem', paddingBottom: '4rem' }}>
           <div style={{ 
             display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
             gap: '3rem',
-            marginBottom: '3rem'
+            marginBottom: '3rem',
+            alignItems: 'start'
           }}>
             {/* Company Info */}
             <div className="lg:col-span-2">

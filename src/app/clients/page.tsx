@@ -185,7 +185,7 @@ export default function ClientsPage() {
             Experience the Pristine36 difference with our professional specialist cleaning services.
           </p>
           <div className="flex gap-4 justify-center" style={{ flexWrap: 'wrap' }}>
-            <Link href="/book" style={{ textDecoration: 'none' }}>
+            <Link href="/contact" style={{ textDecoration: 'none' }}>
               <Button size="lg" variant="secondary">
                 Book Free Consultation
                 <ArrowRight style={{ marginLeft: '0.5rem', height: '1.25rem', width: '1.25rem' }} />

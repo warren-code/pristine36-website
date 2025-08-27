@@ -90,7 +90,7 @@ export default function ContactPage() {
       </section>
 
       {/* Calendly Widget Section */}
-      <section className="section" style={{ paddingTop: '4rem', paddingBottom: '4rem', backgroundColor: 'var(--card-bg)' }}>
+      <section id="calendly" className="section" style={{ paddingTop: '4rem', paddingBottom: '4rem', backgroundColor: 'var(--card-bg)' }}>
         <div className="container">
           <div className="text-center" style={{ marginBottom: '3rem' }}>
             <h2 style={{ color: 'white', marginBottom: '1rem' }}>Schedule Your Free Consultation</h2>

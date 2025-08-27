@@ -53,7 +53,7 @@ export default function Home() {
                 Explore Our Services
                 <ArrowRight style={{ width: '1rem', height: '1rem', marginLeft: '0.5rem' }} />
               </Link>
-              <Link href="/book" className="btn btn-secondary">
+              <Link href="/contact" className="btn btn-secondary">
                 Get My Free Estimate Now
               </Link>
             </div>
@@ -196,7 +196,7 @@ export default function Home() {
             <div className="mobile-padding" style={{ borderRadius: '1rem', backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)' }}>
               <h3 className="text-2xl font-semibold" style={{ marginBottom: '1.5rem', color: 'white' }}>Get Started Today</h3>
               <p style={{ marginBottom: '2rem', color: 'rgba(255, 255, 255, 0.8)' }}>Contact us for a free consultation and discover how our specialist cleaning services can benefit your business.</p>
-              <Link href="/book" className="btn btn-primary btn-lg btn-pulse" style={{ width: '100%', justifyContent: 'center' }}>
+              <Link href="/contact" className="btn btn-primary btn-lg btn-pulse" style={{ width: '100%', justifyContent: 'center' }}>
                 Get My Free Estimate Today
                 <ArrowRight style={{ width: '1rem', height: '1rem', marginLeft: '0.5rem' }} />
               </Link>
@@ -213,7 +213,7 @@ export default function Home() {
             Join hundreds of satisfied clients who trust Pristine36 for their specialist cleaning needs.
           </p>
           <div className="flex gap-4 justify-center btn-group" style={{ flexWrap: 'wrap' }}>
-            <Link href="/book" className="btn btn-primary btn-lg">
+            <Link href="/contact" className="btn btn-primary btn-lg">
               Get Your Free Quote Now
               <ArrowRight style={{ width: '1.25rem', height: '1.25rem' }} />
             </Link>

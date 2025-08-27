@@ -259,7 +259,7 @@ export default function CoveragePage() {
           <p className="text-lg" style={{ marginBottom: '2rem', opacity: 0.9 }}>
             We&apos;re ready to serve you with professional cleaning services.
           </p>
-          <Link href="/book">
+          <Link href="/contact">
             <Button size="lg" variant="secondary">
               Book Your Service
               <ArrowRight style={{ marginLeft: '0.5rem', height: '1.25rem', width: '1.25rem' }} />
