@@ -230,9 +230,9 @@ export default function Footer() {
               <p className="text-gray-600">
                 © {new Date().getFullYear()} Pristine 36 Limited. All rights reserved.
               </p>
-              <div className="flex items-center gap-2">
-                <div style={{ width: '0.5rem', height: '0.5rem', backgroundColor: 'var(--primary)', borderRadius: '9999px' }}></div>
-                <span className="text-sm text-gray-600">24/7 Emergency Service Available</span>
+              <div className="flex items-center gap-2" style={{ height: '100%' }}>
+                <div style={{ width: '0.5rem', height: '0.5rem', backgroundColor: 'var(--primary)', borderRadius: '9999px', flexShrink: 0 }}></div>
+                <span className="text-sm text-gray-600" style={{ lineHeight: '1.5' }}>24/7 Emergency Service Available</span>
               </div>
             </div>
             <div className="flex items-center gap-8">

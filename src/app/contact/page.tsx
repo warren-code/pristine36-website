@@ -21,6 +21,20 @@ export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [submitError, setSubmitError] = useState('')
+  const [calendlyLoaded, setCalendlyLoaded] = useState(false)
+
+  // Initialize Calendly widget
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.Calendly && !calendlyLoaded) {
+      window.Calendly.initInlineWidget({
+        url: CONTACT.calendly,
+        parentElement: document.querySelector('.calendly-inline-widget'),
+        prefill: {},
+        utm: {}
+      });
+      setCalendlyLoaded(true);
+    }
+  }, [calendlyLoaded])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -113,7 +127,17 @@ export default function ContactPage() {
           />
           <Script 
             src="https://assets.calendly.com/assets/external/widget.js" 
-            strategy="lazyOnload"
+            strategy="afterInteractive"
+            onLoad={() => {
+              if (typeof window !== 'undefined' && window.Calendly) {
+                window.Calendly.initInlineWidget({
+                  url: CONTACT.calendly,
+                  parentElement: document.querySelector('.calendly-inline-widget'),
+                  prefill: {},
+                  utm: {}
+                });
+              }
+            }}
           />
         </div>
       </section>
