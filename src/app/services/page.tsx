@@ -294,7 +294,7 @@ export default function ServicesPage() {
       <section className="cta-section" style={{ paddingTop: '6rem', paddingBottom: '6rem', background: 'linear-gradient(135deg, var(--secondary), var(--primary))' }}>
         <div className="container" style={{ maxWidth: '48rem', textAlign: 'center' }}>
           <h2 className="font-bold" style={{ marginBottom: '1rem', color: 'white' }}>
-            Can't Find What You Need?
+            Can&apos;t Find What You Need?
           </h2>
           <p className="text-lg" style={{ marginBottom: '2rem', color: 'rgba(255, 255, 255, 0.9)' }}>
             We work with trusted subcontractors to provide any specialist cleaning service you need.
