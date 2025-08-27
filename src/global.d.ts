@@ -1,8 +1,3 @@
-interface CalendlyEvent {
-  event: string;
-  payload?: unknown;
-}
-
 interface CalendlyWidget {
   initInlineWidget: (options: {
     url: string;
