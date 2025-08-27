@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { Phone, Mail, ExternalLink, Clock } from 'lucide-react'
-import { Logo } from './Logo'
+import { LogoSimple } from './Logo'
 import { CONTACT } from './Header'
 
 const footerLinks = {
@@ -50,7 +50,7 @@ export default function Footer() {
             <div className="lg:col-span-2">
               <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none', marginBottom: '1.5rem' }}>
                 <div style={{ width: '48px', height: '48px', flexShrink: 0 }}>
-                  <Logo style={{ width: '100%', height: '100%' }} />
+                  <LogoSimple style={{ width: '100%', height: '100%', display: 'block' }} />
                 </div>
                 <span style={{ fontSize: '1.75rem', fontWeight: '700', color: 'var(--primary)' }}>
                   Pristine<span style={{ color: 'var(--secondary)' }}>36</span>

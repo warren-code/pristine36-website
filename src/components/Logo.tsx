@@ -102,9 +102,11 @@ export const LogoSimple: React.FC<LogoProps> = ({ className, style }) => {
     <svg
       viewBox="0 0 60 60"
       className={className}
-      style={{ aspectRatio: '1/1', ...style }}
+      style={style}
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid meet"
+      width="60"
+      height="60"
     >
       {/* Simplified version for smaller displays */}
       <circle cx="30" cy="30" r="30" fill="#2B3440" />
