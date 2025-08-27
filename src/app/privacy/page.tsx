@@ -87,7 +87,7 @@ export default function PrivacyPolicy() {
                 strict communication policies to ensure consistency and security:
               </p>
               <ul style={{ listStyle: 'disc', paddingLeft: '2rem', color: 'rgba(255, 255, 255, 0.8)' }}>
-                <li style={{ marginBottom: '0.5rem' }}>All enquiries and bookings are routed to Hayat.S@pristine36.co.uk</li>
+                <li style={{ marginBottom: '0.5rem' }}>All enquiries and bookings are routed to enquiries@pristine36.co.uk</li>
                 <li style={{ marginBottom: '0.5rem' }}>Calendar booking notifications are processed via webhook to ensure you receive confirmations</li>
                 <li style={{ marginBottom: '0.5rem' }}>For mould enquiries, you may submit photos through our contact form - these are used solely for assessment purposes</li>
                 <li style={{ marginBottom: '0.5rem' }}>We delete photo attachments after quote decisions unless required for service delivery or by law</li>
@@ -149,7 +149,7 @@ export default function PrivacyPolicy() {
               </p>
               <div style={{ backgroundColor: 'var(--card-bg)', padding: '1.5rem', borderRadius: '0.5rem', border: '1px solid var(--card-border)' }}>
                 <p className="font-semibold" style={{ marginBottom: '0.5rem', color: 'white' }}>Pristine 36 Limited</p>
-                <p style={{ marginBottom: '0.25rem', color: 'rgba(255, 255, 255, 0.8)' }}>Email: Hayat.S@pristine36.co.uk</p>
+                <p style={{ marginBottom: '0.25rem', color: 'rgba(255, 255, 255, 0.8)' }}>Email: enquiries@pristine36.co.uk</p>
                 <p style={{ marginBottom: '0.25rem', color: 'rgba(255, 255, 255, 0.8)' }}>Phone: 07860249950 / 07932020944</p>
                 <p style={{ marginBottom: '0.25rem', color: 'rgba(255, 255, 255, 0.8)' }}>Company Number: 16213530</p>
                 <p style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Registered Address: 124 City Road, London, United Kingdom, EC1V 2NX</p>

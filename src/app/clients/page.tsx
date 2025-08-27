@@ -106,7 +106,8 @@ export default function ClientsPage() {
                       <Star key={i} style={{ height: '1.25rem', width: '1.25rem', fill: '#facc15', color: '#facc15' }} />
                     ))}
                   </div>
-                  <CardTitle style={{ fontSize: '1.125rem' }}>{testimonial.company}</CardTitle>
+                  <CardTitle style={{ fontSize: '1.125rem', fontWeight: '600' }}>Verified Client</CardTitle>
+                  <div style={{ width: '100%', height: '2px', backgroundColor: 'currentColor', opacity: 0.3, marginTop: '0.25rem' }} />
                 </CardHeader>
                 <CardContent>
                   <p style={{ marginBottom: '1rem', position: 'relative', zIndex: 10, color: 'rgba(255, 255, 255, 0.9)' }}>{testimonial.content}</p>

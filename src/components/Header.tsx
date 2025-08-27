@@ -8,7 +8,7 @@ import { LogoSimple } from './Logo'
 // Real contact information
 export const CONTACT = { 
   phones: ["07860249950", "07932020944"], 
-  email: "Hayat.S@pristine36.co.uk", 
+  email: "enquiries@pristine36.co.uk", 
   calendly: "https://calendly.com/enquiries-pristine36/30min" 
 }
 

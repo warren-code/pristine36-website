@@ -135,7 +135,8 @@ export default function Home() {
               </blockquote>
               <div className="flex justify-center">
                 <div>
-                  <div className="font-semibold" style={{ color: 'white' }}>{testimonial.company}</div>
+                  <div className="font-semibold" style={{ fontSize: '1.125rem', color: 'white' }}>Verified Client</div>
+                  <div style={{ width: '100%', height: '2px', backgroundColor: 'currentColor', opacity: 0.3, marginTop: '0.25rem', marginBottom: '0.5rem' }} />
                   <div style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
                     Commercial Property Management
                   </div>

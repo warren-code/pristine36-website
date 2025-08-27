@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import nodemailer from 'nodemailer'
 
 // Email configuration
-const TO_EMAIL = process.env.TO_EMAIL || 'Hayat.S@pristine36.co.uk'
+const TO_EMAIL = process.env.TO_EMAIL || 'enquiries@pristine36.co.uk'
 const SMTP_HOST = process.env.SMTP_HOST || 'smtp.gmail.com'
 const SMTP_PORT = parseInt(process.env.SMTP_PORT || '587')
 const SMTP_USER = process.env.SMTP_USER || ''
