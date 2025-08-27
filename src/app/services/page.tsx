@@ -17,11 +17,11 @@ const allServices = [
     description: 'Sleep soundly knowing your kitchen is safe from fire hazards and ready to pass any inspection',
     icon: Sparkles,
     features: [
-      'You'll prevent costly fire damage and keep your insurance valid',
-      'You'll pass every health inspection on the first try',
+      'You\'ll prevent costly fire damage and keep your insurance valid',
+      'You\'ll pass every health inspection on the first try',
       'Your equipment will last years longer, saving thousands',
       'Your staff will work more comfortably in cleaner air',
-      'You'll have compliance certificates ready for any inspector'
+      'You\'ll have compliance certificates ready for any inspector'
     ],
     keywords: ['kitchen extract cleaning', 'commercial kitchen deep cleaning', 'tr19 grease', 'ductwork cleaning', 'canopy cleaning London']
   },
@@ -31,11 +31,11 @@ const allServices = [
     description: 'Get your property back to safe, healthy conditions so you can welcome people inside again',
     icon: Bug,
     features: [
-      'You'll protect everyone's health from dangerous diseases',
-      'You'll breathe fresh air again - no more embarrassing odours',
-      'You'll confidently reopen your space to tenants or customers',
-      'You'll stop pests from coming back with our prevention tips',
-      'You'll know exactly how to avoid this nightmare again'
+      'You\'ll protect everyone\'s health from dangerous diseases',
+      'You\'ll breathe fresh air again - no more embarrassing odours',
+      'You\'ll confidently reopen your space to tenants or customers',
+      'You\'ll stop pests from coming back with our prevention tips',
+      'You\'ll know exactly how to avoid this nightmare again'
     ]
   },
   {
@@ -44,11 +44,11 @@ const allServices = [
     description: 'Keep your drains flowing and avoid surprise shutdowns that cost you thousands in lost revenue',
     icon: Droplets,
     features: [
-      'You'll never face emergency drain blockages during service',
-      'You'll always meet environmental regulations effortlessly',
-      'You'll avoid fines that can reach £80,000 or more',
+      'You\'ll never face emergency drain blockages during service',
+      'You\'ll always meet environmental regulations effortlessly',
+      'You\'ll avoid fines that can reach £80,000 or more',
       'Your kitchen will run smoothly through every busy shift',
-      'You'll save 40% compared to emergency callout charges'
+      'You\'ll save 40% compared to emergency callout charges'
     ],
     keywords: ['grease disposal London regulations', 'grease management', 'fog waste management', 'grease filter cleaning']
   },
