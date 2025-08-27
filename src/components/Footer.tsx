@@ -49,8 +49,21 @@ export default function Footer() {
             {/* Company Info */}
             <div className="lg:col-span-2">
               <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none', marginBottom: '1.5rem' }}>
-                <div style={{ width: '48px', height: '48px', flexShrink: 0 }}>
-                  <LogoSimple style={{ width: '100%', height: '100%', display: 'block' }} />
+                <div style={{ 
+                  width: '48px', 
+                  height: '48px', 
+                  flexShrink: 0,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}>
+                  <LogoSimple style={{ 
+                    width: '48px', 
+                    height: '48px', 
+                    maxWidth: '100%', 
+                    maxHeight: '100%',
+                    objectFit: 'contain' 
+                  }} />
                 </div>
                 <span style={{ fontSize: '1.75rem', fontWeight: '700', color: 'var(--primary)' }}>
                   Pristine<span style={{ color: 'var(--secondary)' }}>36</span>
