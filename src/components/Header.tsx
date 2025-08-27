@@ -132,7 +132,6 @@ export default function Header() {
   }
 
   const desktopNavStyle = {
-    display: 'none',
     alignItems: 'center',
     gap: '1.75rem',
   }
