@@ -152,17 +152,9 @@ export default function Header() {
                 width: '48px', 
                 height: '48px', 
                 flexShrink: 0,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
+                position: 'relative'
               }}>
-                <LogoSimple style={{ 
-                  width: '48px', 
-                  height: '48px', 
-                  maxWidth: '100%', 
-                  maxHeight: '100%',
-                  objectFit: 'contain' 
-                }} aria-hidden="true" />
+                <LogoSimple aria-hidden="true" />
               </div>
               <span style={{ fontSize: '1.5rem', fontWeight: '700', letterSpacing: '-0.02em', color: 'var(--primary)' }}>
                 Pristine<span style={{ color: 'var(--secondary)' }}>36</span>

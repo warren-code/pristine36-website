@@ -53,17 +53,9 @@ export default function Footer() {
                   width: '48px', 
                   height: '48px', 
                   flexShrink: 0,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center'
+                  position: 'relative'
                 }}>
-                  <LogoSimple style={{ 
-                    width: '48px', 
-                    height: '48px', 
-                    maxWidth: '100%', 
-                    maxHeight: '100%',
-                    objectFit: 'contain' 
-                  }} />
+                  <LogoSimple />
                 </div>
                 <span style={{ fontSize: '1.75rem', fontWeight: '700', color: 'var(--primary)' }}>
                   Pristine<span style={{ color: 'var(--secondary)' }}>36</span>
